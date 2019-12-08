@@ -1,0 +1,1 @@
+val text = File("something.txt").readText()

@@ -47,6 +47,31 @@ html
           :href
             = classes.html
           = Classes
+      li
+        a
+          :href
+            = collections.html
+          = Collections
+      li
+        a
+          :href
+            = concurrency.html
+          = Concurrency
+      li
+        a
+          :href
+            = delegated-properties.html
+          = Delegated properties
+      li
+        a
+          :href
+            = dsl.html
+          = DSL
+      li
+        a
+          :href
+            = spring-framework.html
+          = Spring Framework
 
 
     .section
@@ -66,6 +91,9 @@ html
       .case (.name "Null II") $ .pair
         .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/null-ii.java)
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/null-ii.kt)
+      .case (.name "Elvis operator") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/elvis-operator.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/elvis-operator.kt)
       .case (.name "Strings I") $ .pair
         .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/strings-i.java)
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/strings-i.kt)
@@ -90,21 +118,10 @@ html
       .case (.name "Switch / When") $ .pair
         .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/switch.java)
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/when.kt)
-      .case (.name "For") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/for.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/for.kt)
-      .case (.name "Collections") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/collections.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/collections.kt)
-      .case (.name "Collections") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/collections-ii.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/collections-ii.kt)
-      .case (.name "Collections") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/collections-iii.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/collections-iii.kt)
-      .case (.name "Collections") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/collections-iv.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/collections-iv.kt)
-      .case (.name "Collections") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/collections-v.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/collections-v.kt
+      .case (.name "Default parameters") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/default-parameters.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/default-parameters.kt)
+      .case (.name "Reading a file") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/read-file.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/read-file.kt)
+

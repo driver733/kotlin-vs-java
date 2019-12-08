@@ -1,3 +1,3 @@
-if(text != null){
-  int length = text.length();
+if (bob != null && bob.department != null && bob.department.text != null){
+  int length = bob.department.text.length();
 }

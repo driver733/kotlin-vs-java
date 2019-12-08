@@ -47,6 +47,31 @@ html
           :href
             = classes.html
           = Classes
+      li
+        a
+          :href
+            = collections.html
+          = Collections
+      li
+        a
+          :href
+            = delegated-properties.html
+          = Delegated properties
+      li
+        a
+          :href
+            = concurrency.html
+          = Concurrency
+      li
+        a
+          :href
+            = dsl.html
+          = DSL
+      li
+        a
+          :href
+            = spring-framework.html
+          = Spring Framework
 
     .section
       .title FUNCTIONS
