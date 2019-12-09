@@ -1,5 +1,5 @@
-fun createInstance(args: Bundle) : MyFragment {
-        val fragment = MyFragment()
-        fragment.arguments = args
-        return fragment
-        }
+public MyFragment createInstance(Bundle args) {
+    val fragment = new MyFragment()
+    fragment.setArguments(args)
+    return fragment
+}

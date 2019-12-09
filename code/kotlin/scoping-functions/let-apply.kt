@@ -1,1 +1,3 @@
-fun makeDir(path: String) = path.let{ File(it) }.also{ it.mkdirs() }
+fun makeDir(path: String) =
+        path.let { File(it) }
+            .also { it.mkdirs() }

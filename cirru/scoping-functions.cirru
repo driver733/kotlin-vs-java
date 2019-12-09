@@ -42,6 +42,8 @@ html
           = Functions
       li
         a
+          :class
+            = selected
           :href
             = scoping-functions.html
           = Scoping functions
@@ -58,15 +60,13 @@ html
       li
         a
           :href
-            = concurrency.html
-          = Concurrency
-      li
-        a
-          :class
-            = selected
-          :href
             = delegated-properties.html
           = Delegated properties
+      li
+        a
+          :href
+            = concurrency.html
+          = Concurrency
       li
         a
           :href
@@ -78,14 +78,26 @@ html
             = spring-framework.html
           = Spring Framework
 
-      .section  
-        .title BASICS
-        .case (.name "Lazy evaluation") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/delegated-properties/lazy.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/delegated-properties/lazy.kt)
-        .case (.name "Map to object") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/delegated-properties/map.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/delegated-properties/map.kt)
-        .case (.name "Observable") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/delegated-properties/observable.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/delegated-properties/observable.kt)
+    .section
+      .title SCOPING-FUNCTIONS
+      .case (.name "Also") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/also.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/also.kt)
+      .case (.name "Apply") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/apply.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/apply.kt)
+      .case (.name "Let") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/let.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/let.kt)
+      .case (.name "Let and apply") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/let-apply.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/let-apply.kt)
+      .case (.name "Run") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/run.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/run.kt)
+      .case (.name "TakeIf") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/takeIf.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/takeIf.kt)
+      .case (.name "With") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/with.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/with.kt)

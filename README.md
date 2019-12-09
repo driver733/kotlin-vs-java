@@ -1,6 +1,6 @@
-# From Java to Kotlin Cheat Sheet
+# Kotlin vs Java
 
-Page: http://fabiomsr.github.io/from-java-to-kotlin/
+Page: http://driver733.github.io/kotlin-vs-java/
 
 Programmatically inspired from [swift-is-like-go](https://github.com/jiyinyiyong/swift-is-like-go) and visually inspired from [swiftislikescala](https://github.com/leverich/swiftislikescala)
 

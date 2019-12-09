@@ -2,7 +2,7 @@ doctype
 
 html
   head
-    title "From Java to Kotlin"
+    title "Kotlin vs Java"
     meta (:charset utf-8)
     link (:rel stylesheet) (:href css/style.css)
     link (:rel stylesheet) (:href css/highlightjs-github.css)
@@ -27,7 +27,7 @@ html
       = ".github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}"
 
     #note
-      = "From Java to Kotlin"
+      = "Kotlin vs Java"
 
     ul
       li
@@ -65,6 +65,11 @@ html
       li
         a
           :href
+            = scoping-functions.html
+          = Scoping functions
+      li
+        a
+          :href
             = dsl.html
           = DSL
       li
@@ -76,6 +81,9 @@ html
 
     .section
       .title BASICS
+      .case (.name "Hello World") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/hello-world.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/hello-world.kt)
       .case (.name "Print") $ .pair
         .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/print.java)
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/print.kt)
