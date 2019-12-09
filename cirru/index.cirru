@@ -5,14 +5,14 @@ html
     title "Kotlin vs Java"
     meta (:charset utf-8)
     link (:rel stylesheet) (:href css/style.css)
-    link (:rel stylesheet) (:href css/highlightjs-github.css)
+    link (:rel stylesheet) (:href css/highlightjs-night-owl.css)
     script (:src js/highlight.9.4.0.js)
     script "hljs.initHighlightingOnLoad();"
 
   body
     a
       :href
-        = https://github.com/fabiomsr/from-java-to-kotlin
+        = https://github.com/driver733/kotlin-vs-java
       :class
         = github-corner
       :aria-label
@@ -45,6 +45,11 @@ html
       li
         a
           :href
+            = scoping-functions.html
+          = Scoping functions
+      li
+        a
+          :href
             = classes.html
           = Classes
       li
@@ -62,11 +67,6 @@ html
           :href
             = delegated-properties.html
           = Delegated properties
-      li
-        a
-          :href
-            = scoping-functions.html
-          = Scoping functions
       li
         a
           :href
@@ -112,24 +112,20 @@ html
         .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/ternary-operator.java)
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/ternary-operator.kt)
 
-    .section
-      .title BASICS
-      .case (.name "Bits Operations") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/bits-operations.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/bits-operations.kt)
-      .case (.name "Is As In") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/operations.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/operations.kt)
-      .case (.name "Smart Cast") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/cast.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/cast.kt)
-      .case (.name "Switch / When") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/switch.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/when.kt)
-      .case (.name "Default parameters") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/default-parameters.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/default-parameters.kt)
-      .case (.name "Reading a file") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/read-file.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/read-file.kt)
+    footer
+      div
+        :class
+          = center
+        p
+          = Created by:
+          a
+            :href
+              = https://www.driver733.com
+            = " @driver733"
+        p
+          = Based on:
+          a
+            :href
+              = https://github.com/fabiomsr/from-java-to-kotlin
+            = " fabiomsr/from-java-to-kotlin"
 

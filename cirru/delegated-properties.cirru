@@ -5,14 +5,14 @@ html
     title "Kotlin vs Java"
     meta (:charset utf-8)
     link (:rel stylesheet) (:href css/style.css)
-    link (:rel stylesheet) (:href css/highlightjs-github.css)
+    link (:rel stylesheet) (:href css/highlightjs-night-owl.css)
     script (:src js/highlight.9.4.0.js)
     script "hljs.initHighlightingOnLoad();"
 
   body
     a
       :href
-        = https://github.com/fabiomsr/from-java-to-kotlin
+        = https://github.com/driver733/kotlin-vs-java
       :class
         = github-corner
       :aria-label
@@ -62,7 +62,7 @@ html
           = Concurrency
       li
         a
-          :class
+         :class
             = selected
           :href
             = delegated-properties.html
@@ -78,14 +78,14 @@ html
             = spring-framework.html
           = Spring Framework
 
-      .section  
-        .title BASICS
-        .case (.name "Lazy evaluation") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/delegated-properties/lazy.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/delegated-properties/lazy.kt)
-        .case (.name "Map to object") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/delegated-properties/map.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/delegated-properties/map.kt)
-        .case (.name "Observable") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/delegated-properties/observable.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/delegated-properties/observable.kt)
+    .section
+      .title BASICS
+      .case (.name "Lazy evaluation") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/delegated-properties/lazy.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/delegated-properties/lazy.kt)
+      .case (.name "Map to object") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/delegated-properties/map.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/delegated-properties/map.kt)
+      .case (.name "Observable") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/delegated-properties/observable.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/delegated-properties/observable.kt)
