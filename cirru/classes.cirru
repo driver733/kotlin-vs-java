@@ -5,14 +5,14 @@ html
     title "Kotlin vs Java"
     meta (:charset utf-8)
     link (:rel stylesheet) (:href css/style.css)
-    link (:rel stylesheet) (:href css/highlightjs-github.css)
+    link (:rel stylesheet) (:href css/highlightjs-night-owl.css)
     script (:src js/highlight.9.4.0.js)
     script "hljs.initHighlightingOnLoad();"
 
   body
     a
       :href
-        = https://github.com/fabiomsr/from-java-to-kotlin
+        = https://github.com/driver733/kotlin-vs-java
       :class
         = github-corner
       :aria-label
@@ -59,8 +59,6 @@ html
           = Collections
       li
         a
-          :class
-            = selected
           :href
             = concurrency.html
           = Concurrency

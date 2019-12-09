@@ -5,14 +5,14 @@ html
     title "Kotlin vs Java"
     meta (:charset utf-8)
     link (:rel stylesheet) (:href css/style.css)
-    link (:rel stylesheet) (:href css/highlightjs-github.css)
+    link (:rel stylesheet) (:href css/highlightjs-night-owl.css)
     script (:src js/highlight.9.4.0.js)
     script "hljs.initHighlightingOnLoad();"
 
   body
     a
       :href
-        = https://github.com/fabiomsr/from-java-to-kotlin
+        = https://github.com/driver733/kotlin-vs-java
       :class
         = github-corner
       :aria-label
@@ -78,26 +78,26 @@ html
             = spring-framework.html
           = Spring Framework
 
-      .section
-        .title BASICS
-        .case (.name "Collections") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/01.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/01.kt)
-        .case (.name "Collections") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/02.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/02.kt)
-        .case (.name "Collections") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/03.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/03.kt)
-        .case (.name "Collections") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/04.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/04.kt)
-        .case (.name "Collections") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/05.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/05.kt
-        .case (.name "For") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/06.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/06.kt)
-        .case (.name "For") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/07.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/07.kt)
+    .section
+      .title BASICS
+      .case (.name "Collections") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/01.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/01.kt)
+      .case (.name "Collections") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/02.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/02.kt)
+      .case (.name "Collections") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/03.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/03.kt)
+      .case (.name "Collections") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/04.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/04.kt)
+      .case (.name "Collections") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/05.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/05.kt
+      .case (.name "For") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/06.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/06.kt)
+      .case (.name "For") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/07.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/07.kt)

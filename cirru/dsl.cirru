@@ -5,14 +5,14 @@ html
     title "Kotlin vs Java"
     meta (:charset utf-8)
     link (:rel stylesheet) (:href css/style.css)
-    link (:rel stylesheet) (:href css/highlightjs-github.css)
+    link (:rel stylesheet) (:href css/highlightjs-night-owl.css)
     script (:src js/highlight.9.4.0.js)
     script "hljs.initHighlightingOnLoad();"
 
   body
     a
       :href
-        = https://github.com/fabiomsr/from-java-to-kotlin
+        = https://github.com/driver733/kotlin-vs-java
       :class
         = github-corner
       :aria-label
@@ -67,7 +67,7 @@ html
           = Delegated properties
       li
         a
-         :class
+          :class
             = selected
           :href
             = dsl.html
@@ -86,13 +86,13 @@ html
       .case (.name "II") $ .pair
         .card (.lang Java) $ pre.code $ code (@insert ../code/java/dsl/02.java)
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/dsl/02.kt)
-      .case (.name "II") $ .pair
+      .case (.name "III") $ .pair
         .card (.lang Java) $ pre.code $ code (@insert ../code/java/dsl/03.java)
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/dsl/03.kt)
-      .case (.name "II") $ .pair
+      .case (.name "IV") $ .pair
         .card (.lang Java) $ pre.code $ code (@insert ../code/java/dsl/04.java)
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/dsl/04.kt)
-      .case (.name "II") $ .pair
+      .case (.name "V") $ .pair
         .card (.lang Java) $ pre.code $ code (@insert ../code/java/dsl/05.java)
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/dsl/05.kt)
 

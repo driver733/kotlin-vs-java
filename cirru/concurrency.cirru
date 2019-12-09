@@ -5,14 +5,14 @@ html
     title "Kotlin vs Java"
     meta (:charset utf-8)
     link (:rel stylesheet) (:href css/style.css)
-    link (:rel stylesheet) (:href css/highlightjs-github.css)
+    link (:rel stylesheet) (:href css/highlightjs-night-owl.css)
     script (:src js/highlight.9.4.0.js)
     script "hljs.initHighlightingOnLoad();"
 
   body
     a
       :href
-        = https://github.com/fabiomsr/from-java-to-kotlin
+        = https://github.com/driver733/kotlin-vs-java
       :class
         = github-corner
       :aria-label
@@ -78,14 +78,14 @@ html
             = spring-framework.html
           = Spring Framework
 
-      .section  
-        .title BASICS
-        .case (.name "I") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/concurrency/01.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/concurrency/01.kt)
-        .case (.name "II") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/concurrency/02.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/concurrency/02.kt)
-        .case (.name "III") $ .pair
-          .card (.lang Java) $ pre.code $ code (@insert ../code/java/concurrency/03.java)
-          .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/concurrency/03.kt)
+    .section
+      .title BASICS
+      .case (.name "I") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/concurrency/01.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/concurrency/01.kt)
+      .case (.name "II") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/concurrency/02.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/concurrency/02.kt)
+      .case (.name "III") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/concurrency/03.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/concurrency/03.kt)

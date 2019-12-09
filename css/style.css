@@ -8,7 +8,7 @@ body * {
 }
 
 .section {
-    background-color: #f4f4f4;
+    background-color: #232323;
     padding: 4em 3em;
 }
 
@@ -16,9 +16,13 @@ body * {
     background-color: white;
 }
 
+.section:nth-child(2n) .code {
+    background-color: #f4f4f4;
+}
+
 .title {
     font-size: 2.7em;
-    color: #888;
+    color: white;
     font-weight: 100;
     letter-spacing: 0.2em;
     text-align: center;
@@ -28,7 +32,7 @@ body * {
 
 .name {
     font-size: 1.8em;
-    color: #444;
+    color: white;
     font-weight: 300;
     text-align: center;
     margin: 60px;
@@ -54,7 +58,7 @@ body * {
 
 .lang {
     font-size: 1.3em;
-    color: #666;
+    color: white;
     padding-bottom: 0;
     font-weight: 200;
     letter-spacing: 0.07em;
@@ -62,14 +66,12 @@ body * {
 
 .code {
     font-size: 1.15em;
-    background-color: white;
     margin: 0.4em 0 0 0;
     padding: 0.4em;
     line-height: 1.3em;
 }
-.section:nth-child(2n) .code {
-    background-color: #f4f4f4;
-}
+
+
 
 #fork-me {
     position: absolute;
@@ -112,4 +114,25 @@ li a:hover {
 
 li a.selected {
     background-color: #4e4e4e;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    /*border: 3px solid green;*/
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #414141;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    color: darkgray;
 }
