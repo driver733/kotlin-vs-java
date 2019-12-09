@@ -1,0 +1,1 @@
+val pairs = listOf(1, 2, 3).zip(listOf("one", "two", "three")) // List<Pair<Int, String>>

@@ -37,13 +37,13 @@ html
           = Basic
       li
         a
-          :class
-            = selected
           :href
             = functions.html
           = Functions
       li
         a
+          :class
+            = selected
           :href
             = scoping-functions.html
           = Scoping functions
@@ -79,40 +79,25 @@ html
           = Spring Framework
 
     .section
-      .title FUNCTIONS
-      .case (.name "Basic Function") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-00.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-00.kt)
-      .case (.name "Arguments") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-01.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-01.kt)
-      .case (.name "Default Values") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-02.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-02.kt)
-      .case (.name "Return") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-03.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-03.kt)
-      .case (.name "Single-Expression") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-04.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-04.kt)
-
-    .section
-      .title FUNCTIONS
-      .case (.name "Vararg") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-05.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-05.kt)
-      .case (.name "Main") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-06.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-06.kt)
-      .case (.name "Named Arguments") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-07.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-07.kt)
-      .case (.name "Optional Arguments") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-08.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-08.kt)
-      .case (.name "Generic Methods") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-09.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-09.kt)
-      .case (.name "Data Classes - Destructuring") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-10.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-10.kt)
+      .title SCOPING-FUNCTIONS
+      .case (.name "Also") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/also.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/also.kt)
+      .case (.name "Apply") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/apply.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/apply.kt)
+      .case (.name "Let") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/let.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/let.kt)
+      .case (.name "Let and apply") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/let-apply.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/let-apply.kt)
+      .case (.name "Run") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/run.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/run.kt)
+      .case (.name "TakeIf") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/takeIf.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/takeIf.kt)
+      .case (.name "With") $ .pair
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/with.java)
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/with.kt)

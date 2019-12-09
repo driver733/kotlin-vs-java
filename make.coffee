@@ -9,7 +9,7 @@ mission.time()
 
 cirru = (data) ->
   mission.cirruHtml
-    files: ['index.cirru', 'functions.cirru', 'classes.cirru']
+    files: ['index.cirru', 'functions.cirru', 'scoping-functions.cirru', 'classes.cirru', 'collections.cirru', 'concurrency.cirru', 'delegated-properties.cirru', 'dsl.cirru', 'spring-framework.cirru']
     from: 'cirru/'
     to: './'
     extname: '.html'
