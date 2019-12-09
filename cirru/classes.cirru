@@ -123,3 +123,20 @@ html
       .case (.name "Interface") $ .pair
         .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-012.java)
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-012.kt)
+
+    footer
+      div
+        :class
+          = center
+        p
+          = Created by:
+          a
+            :href
+              = https://www.driver733.com
+            = " @driver733"
+        p
+          = Based on:
+          a
+            :href
+              = https://github.com/fabiomsr/from-java-to-kotlin
+            = " fabiomsr/from-java-to-kotlin"

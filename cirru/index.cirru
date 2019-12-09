@@ -128,4 +128,3 @@ html
             :href
               = https://github.com/fabiomsr/from-java-to-kotlin
             = " fabiomsr/from-java-to-kotlin"
-

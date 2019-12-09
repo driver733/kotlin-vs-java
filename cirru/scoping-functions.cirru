@@ -101,3 +101,20 @@ html
       .case (.name "With") $ .pair
         .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/with.java)
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/with.kt)
+
+    footer
+      div
+        :class
+          = center
+        p
+          = Created by:
+          a
+            :href
+              = https://www.driver733.com
+            = " @driver733"
+        p
+          = Based on:
+          a
+            :href
+              = https://github.com/fabiomsr/from-java-to-kotlin
+            = " fabiomsr/from-java-to-kotlin"

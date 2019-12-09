@@ -101,3 +101,20 @@ html
       .case (.name "For") $ .pair
         .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/07.java)
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/07.kt)
+
+    footer
+      div
+        :class
+          = center
+        p
+          = Created by:
+          a
+            :href
+              = https://www.driver733.com
+            = " @driver733"
+        p
+          = Based on:
+          a
+            :href
+              = https://github.com/fabiomsr/from-java-to-kotlin
+            = " fabiomsr/from-java-to-kotlin"
