@@ -89,3 +89,20 @@ html
       .case (.name "Observable") $ .pair
         .card (.lang Java) $ pre.code $ code (@insert ../code/java/delegated-properties/observable.java)
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/delegated-properties/observable.kt)
+
+    footer
+      div
+        :class
+          = center
+        p
+          = Created by:
+          a
+            :href
+              = https://www.driver733.com
+            = " @driver733"
+        p
+          = Based on:
+          a
+            :href
+              = https://github.com/fabiomsr/from-java-to-kotlin
+            = " fabiomsr/from-java-to-kotlin"

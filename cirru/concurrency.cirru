@@ -89,3 +89,20 @@ html
       .case (.name "III") $ .pair
         .card (.lang Java) $ pre.code $ code (@insert ../code/java/concurrency/03.java)
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/concurrency/03.kt)
+
+    footer
+      div
+        :class
+          = center
+        p
+          = Created by:
+          a
+            :href
+              = https://www.driver733.com
+            = " @driver733"
+        p
+          = Based on:
+          a
+            :href
+              = https://github.com/fabiomsr/from-java-to-kotlin
+            = " fabiomsr/from-java-to-kotlin"

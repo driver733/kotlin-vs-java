@@ -13,11 +13,7 @@ body * {
 }
 
 .section:nth-child(2n) {
-    background-color: white;
-}
-
-.section:nth-child(2n) .code {
-    background-color: #f4f4f4;
+    background-color: #1c1c21;
 }
 
 .title {
@@ -52,7 +48,7 @@ body * {
     flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
-    max-width: 590px;
+    max-width: 700px;
     margin: 0 10px;
 }
 
