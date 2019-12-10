@@ -9,7 +9,7 @@ body * {
 
 .section {
     background-color: #232323;
-    padding: 4em 3em;
+    padding: 2em;
 }
 
 .section:nth-child(2n) {
@@ -31,31 +31,19 @@ body * {
     color: white;
     font-weight: 300;
     text-align: center;
-    margin: 60px;
+    padding-top: 0.5em;
+    margin: 0.5em;
 }
 
-.pair {
-    display: flex;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    justify-content: center;
-    -webkit-justify-content: center;
-    -ms-box-pack: center;
-    -ms-box-align: center;
-}
-
-.card {
-    flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    max-width: 700px;
-    margin: 0 10px;
+.card:last-child {
+    padding-top: 2em;
 }
 
 .lang {
     font-size: 1.3em;
     color: white;
     padding-bottom: 0;
+    padding-left: 0.4em;
     font-weight: 200;
     letter-spacing: 0.07em;
 }
@@ -66,8 +54,6 @@ body * {
     padding: 0.4em;
     line-height: 1.3em;
 }
-
-
 
 #fork-me {
     position: absolute;
@@ -114,8 +100,7 @@ li a.selected {
 
 .center {
     margin: auto;
-    width: 50%;
-    /*border: 3px solid green;*/
+    width: 100%;
     text-align: center;
     padding: 20px;
 }

@@ -6,7 +6,7 @@ html
     meta (:charset utf-8)
     link (:rel stylesheet) (:href css/style.css)
     link (:rel stylesheet) (:href css/highlightjs-night-owl.css)
-    script (:src js/highlight.9.4.0.js)
+    script (:src js/highlight.9.16.2.js)
     script "hljs.initHighlightingOnLoad();"
 
   body
@@ -81,41 +81,41 @@ html
     .section
       .title FUNCTIONS
       .case (.name "Basic Function") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-00.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-00.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-00.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-00.kt) $ :class kotlin
       .case (.name "Arguments") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-01.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-01.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-01.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-01.kt) $ :class kotlin
       .case (.name "Default Values") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-02.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-02.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-02.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-02.kt) $ :class kotlin
       .case (.name "Return") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-03.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-03.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-03.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-03.kt) $ :class kotlin
       .case (.name "Single-Expression") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-04.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-04.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-04.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-04.kt) $ :class kotlin
 
     .section
       .title FUNCTIONS
       .case (.name "Vararg") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-05.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-05.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-05.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-05.kt) $ :class kotlin
       .case (.name "Main") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-06.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-06.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-06.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-06.kt) $ :class kotlin
       .case (.name "Named Arguments") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-07.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-07.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-07.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-07.kt) $ :class kotlin
       .case (.name "Optional Arguments") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-08.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-08.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-08.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-08.kt) $ :class kotlin
       .case (.name "Generic Methods") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-09.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-09.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-09.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-09.kt) $ :class kotlin
       .case (.name "Data Classes - Destructuring") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-10.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-10.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/functions/functions-10.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/functions/functions-10.kt) $ :class kotlin
 
     footer
       div

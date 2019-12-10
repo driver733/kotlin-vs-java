@@ -6,7 +6,7 @@ html
     meta (:charset utf-8)
     link (:rel stylesheet) (:href css/style.css)
     link (:rel stylesheet) (:href css/highlightjs-night-owl.css)
-    script (:src js/highlight.9.4.0.js)
+    script (:src js/highlight.9.16.2.js)
     script "hljs.initHighlightingOnLoad();"
 
   body
@@ -82,35 +82,35 @@ html
     .section
       .title BASICS
       .case (.name "Hello World") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/hello-world.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/hello-world.kt)
+        .card (.lang Java)   $ pre.code $ code (@insert ../code/java/basic/hello-world.java) $ :class java $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/hello-world.kt) $ :class kotlin $ :class kotlin
       .case (.name "Print") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/print.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/print.kt)
+        .card (.lang Java)   $ pre.code $ code (@insert ../code/java/basic/print.java) $ :class java $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/print.kt) $ :class kotlin $ :class kotlin
       .case (.name "Variables I") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/variables-i.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/variables-i.kt)
+        .card (.lang Java)   $ pre.code $ code (@insert ../code/java/basic/variables-i.java) $ :class java $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/variables-i.kt) $ :class kotlin $ :class kotlin
       .case (.name "Variables II") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/variables-ii.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/variables-ii.kt)
+        .card (.lang Java)   $ pre.code $ code (@insert ../code/java/basic/variables-ii.java) $ :class java $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/variables-ii.kt) $ :class kotlin $ :class kotlin
       .case (.name "Null I") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/null-i.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/null-i.kt)
+        .card (.lang Java)   $ pre.code $ code (@insert ../code/java/basic/null-i.java) $ :class java $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/null-i.kt) $ :class kotlin $ :class kotlin
       .case (.name "Null II") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/null-ii.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/null-ii.kt)
+        .card (.lang Java)   $ pre.code $ code (@insert ../code/java/basic/null-ii.java) $ :class java $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/null-ii.kt) $ :class kotlin $ :class kotlin
       .case (.name "Elvis operator") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/elvis-operator.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/elvis-operator.kt)
+        .card (.lang Java)   $ pre.code $ code (@insert ../code/java/basic/elvis-operator.java) $ :class java $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/elvis-operator.kt) $ :class kotlin $ :class kotlin
       .case (.name "Strings I") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/strings-i.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/strings-i.kt)
+        .card (.lang Java)   $ pre.code $ code (@insert ../code/java/basic/strings-i.java) $ :class java $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/strings-i.kt) $ :class kotlin $ :class kotlin
       .case (.name "Strings II") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/strings-ii.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/strings-ii.kt)
+        .card (.lang Java)   $ pre.code $ code (@insert ../code/java/basic/strings-ii.java) $ :class java $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/strings-ii.kt) $ :class kotlin $ :class kotlin
       .case (.name "Ternary Operator") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/basic/ternary-operator.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/ternary-operator.kt)
+        .card (.lang Java)   $ pre.code $ code (@insert ../code/java/basic/ternary-operator.java) $ :class java $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/basic/ternary-operator.kt) $ :class kotlin $ :class kotlin
 
     footer
       div

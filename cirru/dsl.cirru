@@ -6,7 +6,7 @@ html
     meta (:charset utf-8)
     link (:rel stylesheet) (:href css/style.css)
     link (:rel stylesheet) (:href css/highlightjs-night-owl.css)
-    script (:src js/highlight.9.4.0.js)
+    script (:src js/highlight.9.16.2.js)
     script "hljs.initHighlightingOnLoad();"
 
   body
@@ -81,20 +81,20 @@ html
     .section
       .title BASICS
       .case (.name "I") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/dsl/01.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/dsl/01.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/dsl/01.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/dsl/01.kt) $ :class kotlin
       .case (.name "II") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/dsl/02.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/dsl/02.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/dsl/02.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/dsl/02.kt) $ :class kotlin
       .case (.name "III") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/dsl/03.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/dsl/03.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/dsl/03.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/dsl/03.kt) $ :class kotlin
       .case (.name "IV") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/dsl/04.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/dsl/04.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/dsl/04.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/dsl/04.kt) $ :class kotlin
       .case (.name "V") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/dsl/05.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/dsl/05.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/dsl/05.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/dsl/05.kt) $ :class kotlin
 
     footer
       div

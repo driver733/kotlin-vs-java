@@ -6,7 +6,7 @@ html
     meta (:charset utf-8)
     link (:rel stylesheet) (:href css/style.css)
     link (:rel stylesheet) (:href css/highlightjs-night-owl.css)
-    script (:src js/highlight.9.4.0.js)
+    script (:src js/highlight.9.16.2.js)
     script "hljs.initHighlightingOnLoad();"
 
   body
@@ -81,8 +81,8 @@ html
     .section
       .title BASICS
       .case (.name "Immutable Configuration properties") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/spring-framework/spring-framework-00.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/spring-framework/spring-framework-00.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/spring-framework/spring-framework-00.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/spring-framework/spring-framework-00.kt) $ :class kotlin
 
     footer
       div

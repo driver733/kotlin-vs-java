@@ -6,7 +6,7 @@ html
     meta (:charset utf-8)
     link (:rel stylesheet) (:href css/style.css)
     link (:rel stylesheet) (:href css/highlightjs-night-owl.css)
-    script (:src js/highlight.9.4.0.js)
+    script (:src js/highlight.9.16.2.js)
     script "hljs.initHighlightingOnLoad();"
 
   body
@@ -81,26 +81,26 @@ html
     .section
       .title BASICS
       .case (.name "Collections") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/01.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/01.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/01.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/01.kt) $ :class kotlin
       .case (.name "Collections") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/02.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/02.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/02.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/02.kt) $ :class kotlin
       .case (.name "Collections") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/03.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/03.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/03.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/03.kt) $ :class kotlin
       .case (.name "Collections") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/04.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/04.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/04.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/04.kt) $ :class kotlin
       .case (.name "Collections") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/05.java)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/05.java) $ :class java
         .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/05.kt
       .case (.name "For") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/06.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/06.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/06.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/06.kt) $ :class kotlin
       .case (.name "For") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/07.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/07.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/collections/07.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/collections/07.kt) $ :class kotlin
 
     footer
       div
