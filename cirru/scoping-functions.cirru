@@ -6,7 +6,7 @@ html
     meta (:charset utf-8)
     link (:rel stylesheet) (:href css/style.css)
     link (:rel stylesheet) (:href css/highlightjs-night-owl.css)
-    script (:src js/highlight.9.4.0.js)
+    script (:src js/highlight.9.16.2.js)
     script "hljs.initHighlightingOnLoad();"
 
   body
@@ -81,26 +81,26 @@ html
     .section
       .title SCOPING-FUNCTIONS
       .case (.name "Also") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/also.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/also.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/also.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/also.kt) $ :class kotlin
       .case (.name "Apply") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/apply.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/apply.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/apply.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/apply.kt) $ :class kotlin
       .case (.name "Let") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/let.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/let.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/let.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/let.kt) $ :class kotlin
       .case (.name "Let and apply") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/let-apply.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/let-apply.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/let-apply.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/let-apply.kt) $ :class kotlin
       .case (.name "Run") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/run.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/run.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/run.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/run.kt) $ :class kotlin
       .case (.name "TakeIf") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/takeIf.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/takeIf.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/takeIf.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/takeIf.kt) $ :class kotlin
       .case (.name "With") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/with.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/with.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/scoping-functions/with.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/scoping-functions/with.kt) $ :class kotlin
 
     footer
       div

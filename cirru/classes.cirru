@@ -6,7 +6,7 @@ html
     meta (:charset utf-8)
     link (:rel stylesheet) (:href css/style.css)
     link (:rel stylesheet) (:href css/highlightjs-night-owl.css)
-    script (:src js/highlight.9.4.0.js)
+    script (:src js/highlight.9.16.2.js)
     script "hljs.initHighlightingOnLoad();"
 
   body
@@ -82,47 +82,47 @@ html
     .section
       .title CLASSES
       .case (.name "Constructor Call") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-00.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-00.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-00.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-00.kt) $ :class kotlin
       .case (.name "Class") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-01.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-01.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-01.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-01.kt) $ :class kotlin
       .case (.name "Open Class") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-02.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-02.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-02.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-02.kt) $ :class kotlin
       .case (.name "Final Attributes") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-03.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-03.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-03.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-03.kt) $ :class kotlin
       .case (.name "Primary Constructor") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-04.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-04.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-04.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-04.kt) $ :class kotlin
       .case (.name "Optional Arguments in Constructors") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-05.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-05.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-05.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-05.kt) $ :class kotlin
       .case (.name "Properties") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-06.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-06.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-06.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-06.kt) $ :class kotlin
 
     .section
       .title FUNCTIONS
       .case (.name "Abstract Class") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-07.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-07.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-07.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-07.kt) $ :class kotlin
       .case (.name "Singleton") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-08.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-08.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-08.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-08.kt) $ :class kotlin
       .case (.name "Extensions") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-09.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-09.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-09.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-09.kt) $ :class kotlin
       .case (.name "Inner Class") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-010.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-010.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-010.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-010.kt) $ :class kotlin
       .case (.name "Nested Class") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-011.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-011.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-011.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-011.kt) $ :class kotlin
       .case (.name "Interface") $ .pair
-        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-012.java)
-        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-012.kt)
+        .card (.lang Java) $ pre.code $ code (@insert ../code/java/classes/classes-012.java) $ :class java
+        .card (.lang Kotlin) $ pre.code $ code (@insert ../code/kotlin/classes/classes-012.kt) $ :class kotlin
 
     footer
       div
