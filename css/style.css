@@ -1,10 +1,5 @@
 body {
     font-family: "Helvetica Neue", sans-serif;
-    /*margin: 0;*/
-}
-
-body * {
-    /*box-sizing: border-box;*/
 }
 
 .list-group {
@@ -17,25 +12,10 @@ body * {
 
 .section .list-group-item {
     background-color: #232323;
-    /*padding: 2em;*/
 }
-
-
-.section:last-child {
-    /*background-color: #232323;*/
-    /*padding: 2em;*/
-}
-
-/*.section:nth-child(2n) {*/
-/*    background-color: #1c1c21;*/
-/*}*/
-
-/*.pair {*/
-/*    background-color: #1c1c21;*/
-/*}*/
 
 .title {
-    font-size: 2em;
+    font-size: 2.5em;
     color: white;
     font-weight: 100;
     letter-spacing: 0.2em;
@@ -53,27 +33,15 @@ body * {
     margin: 0.5em;
 }
 
-/*.card:last-child {*/
-/*    padding-top: 2em;*/
-/*}*/
-
-
-
 .lang {
-    font-size: 1em;
+    font-size: 1.5em;
     color: white;
-    /*background-color: #0b2e13;*/
-    /*padding-bottom: 0;*/
-    /*padding-left: 0.4em;*/
     font-weight: 200;
     letter-spacing: 0.07em;
 }
 
 .code {
-    font-size: 1em;
-    /*margin: 0.4em 0 0 0;*/
-    /*padding: 0.4em;*/
-    /*line-height: 1.3em;*/
+    font-size: 1.25em;
 }
 
 #fork-me {
@@ -91,58 +59,28 @@ body * {
 
 .header {
     background-color: #414141;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .header a {
     color: white;
 }
 
-/*ul {*/
-/*    list-style-type: none;*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    overflow: hidden;*/
-/*    background-color: #414141;*/
-/*}*/
-
-/*li {*/
-/*    float: left;*/
-/*}*/
-
-/*li a {*/
-/*    display: block;*/
-/*    color: white;*/
-/*    text-align: center;*/
-/*    padding: 14px 16px;*/
-/*    text-decoration: none;*/
-/*}*/
-
 li a:hover {
     background-color: #3c3c3c;
 }
 
-li a.selected {
+.selected {
     background-color: #4e4e4e;
 }
 
-/*.center {*/
-/*    margin: auto;*/
-/*    width: 100%;*/
-/*    text-align: center;*/
-/*    padding: 20px;*/
-/*}*/
-
 footer {
     background-color: #414141;
-    font-size: 1em;
+    font-size: 1.5em;
+    color: white;
 }
 
 footer a {
-    color: white;
     text-decoration: none;
-}
-
-footer p {
-    color: darkgray;
+    color: dodgerblue;
 }
