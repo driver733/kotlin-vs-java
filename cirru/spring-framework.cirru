@@ -29,31 +29,31 @@ html
       div (:class "collapse navbar-collapse") (:id "navbarNav")
         ul (:class "navbar-nav")
           li (:class "nav-item px-2")
-            a (:class nav-link) (:href /kotlin-vs-java/index.html)
+            a (:class nav-link) (:href /index.html)
               = Basics
           li (:class "nav-item px-2")
-            a (:class nav-link) (:href /kotlin-vs-java/classes.html)
+            a (:class nav-link) (:href /classes.html)
               = Classes
           li (:class "nav-item px-2")
-            a (:class nav-link) (:href /kotlin-vs-java/collections.html)
+            a (:class nav-link) (:href /collections.html)
               = Collections
           li (:class "nav-item px-2")
-            a (:class nav-link) (:href /kotlin-vs-java/concurrency.html)
+            a (:class nav-link) (:href /concurrency.html)
               = Concurrency
           li (:class "nav-item px-2")
-            a (:class nav-link) (:href /kotlin-vs-java/delegated-properties.html)
+            a (:class nav-link) (:href /delegated-properties.html)
               = Delegated Properties
           li (:class "nav-item px-2")
-            a (:class nav-link) (:href /kotlin-vs-java/dsl.html)
+            a (:class nav-link) (:href /dsl.html)
               = DSL
           li (:class "nav-item px-2")
-            a (:class nav-link) (:href /kotlin-vs-java/functions.html)
+            a (:class nav-link) (:href /functions.html)
               = Functions
           li (:class "nav-item px-2")
-            a (:class nav-link) (:href /kotlin-vs-java/scoping-functions.html)
+            a (:class nav-link) (:href /scoping-functions.html)
               = Scoping Functions
           li (:class "nav-item px-2 active")
-            a (:class nav-link) (:href /kotlin-vs-java/spring-framework.html)
+            a (:class nav-link) (:href /spring-framework.html)
               = Spring Framework
             span (:class sr-only)
               = (current)
