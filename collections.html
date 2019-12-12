@@ -22,7 +22,7 @@ val map = mapOf(1 to "One",
 </code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Collections</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">final List&ltInteger&gt evens = new ArrayList<>();
 final List&ltInteger&gt odds = new ArrayList<>();
 
-Map<Boolean, List<Integer>> map = numbers.stream()
+Map&ltBoolean, List&ltInteger&gt&gt map = numbers.stream()
         .collect(
             Collectors.partitioningBy(num -> num % 2 == 0)
         );</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val (evens, odds) = numbers.partition { it % 2 == 0 }
