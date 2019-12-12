@@ -23,28 +23,39 @@ html
             = "Kotlin vs Java"
 
     nav (:class "navbar navbar-dark navbar-expand-lg")
-      div (:class "collapse navbar-collapse")
-        div (:class navbar-nav)
-          a (:class "nav-item nav-link") (:href /kotlin-vs-java/index.html)
-            = Basics
-          a (:class "nav-item nav-link active") (:href /kotlin-vs-java/classes.html)
-            = Classes
-              span (:class sr-only)
-                = (current)
-          a (:class "nav-item nav-link") (:href /kotlin-vs-java/collections.html)
-            = Collections
-          a (:class "nav-item nav-link") (:href /kotlin-vs-java/concurrency.html)
-            = Concurrency
-          a (:class "nav-item nav-link") (:href /kotlin-vs-java/delegated-properties.html)
-            = Delegated Properties
-          a (:class "nav-item nav-link") (:href /kotlin-vs-java/dsl.html)
-            = DSL
-          a (:class "nav-item nav-link") (:href /kotlin-vs-java/functions.html)
-            = Functions
-          a (:class "nav-item nav-link") (:href /kotlin-vs-java/scoping-functions.html)
-            = Scoping Functions
-          a (:class "nav-item nav-link") (:href /kotlin-vs-java/spring-framework.html)
-            = Spring Framework
+      button (:class navbar-toggler) (:type button) (:data-toggle collapse) (:data-target #navbarNav) (:aria-controls navbarNav) (:aria-expanded false) (:aria-label "Toggle navigation")
+        span (:class navbar-toggler-icon)
+      div (:class "collapse navbar-collapse") (:id "navbarNav")
+        ul (:class "navbar-nav")
+          li (:class "nav-item px-2")
+            a (:class nav-link) (:href /kotlin-vs-java/index.html)
+              = Basics
+          li (:class "nav-item px-2 active")
+            a (:class nav-link) (:href /kotlin-vs-java/classes.html)
+              = Classes
+            span (:class sr-only)
+              = (current)
+          li (:class "nav-item px-2")
+            a (:class nav-link) (:href /kotlin-vs-java/collections.html)
+              = Collections
+          li (:class "nav-item px-2")
+            a (:class nav-link) (:href /kotlin-vs-java/concurrency.html)
+              = Concurrency
+          li (:class "nav-item px-2")
+            a (:class nav-link) (:href /kotlin-vs-java/delegated-properties.html)
+              = Delegated Properties
+          li (:class "nav-item px-2")
+            a (:class nav-link) (:href /kotlin-vs-java/dsl.html)
+              = DSL
+          li (:class "nav-item px-2")
+            a (:class nav-link) (:href /kotlin-vs-java/functions.html)
+              = Functions
+          li (:class "nav-item px-2")
+            a (:class nav-link) (:href /kotlin-vs-java/scoping-functions.html)
+              = Scoping Functions
+          li (:class "nav-item px-2")
+            a (:class nav-link) (:href /kotlin-vs-java/spring-framework.html)
+              = Spring Framework
 
     a
       :href
@@ -63,7 +74,7 @@ html
     .section
       .list-group-flush
         div (:class "list-group-item border-0")
-          .title "Variables I"
+          .title "Constructor Call"
           .container-fluid
             .row
               .col
@@ -73,7 +84,7 @@ html
                 .lang Kotlin
                 pre.code $ code (@insert ../code/kotlin/classes/classes-00.kt) $ :class kotlin
         div (:class "list-group-item border-0")
-          .title "Variables II"
+          .title "Class"
           .container-fluid
             .row
               .col
@@ -83,7 +94,7 @@ html
                 .lang Kotlin
                 pre.code $ code (@insert ../code/kotlin/classes/classes-01.kt) $ :class kotlin
         div (:class "list-group-item border-0")
-          .title "Null I"
+          .title "Open Class"
           .container-fluid
             .row
               .col
@@ -93,7 +104,7 @@ html
                 .lang Kotlin
                 pre.code $ code (@insert ../code/kotlin/classes/classes-02.kt) $ :class kotlin
         div (:class "list-group-item border-0")
-          .title "Null II"
+          .title "Final Attributes"
           .container-fluid
             .row
               .col
@@ -103,7 +114,7 @@ html
                 .lang Kotlin
                 pre.code $ code (@insert ../code/kotlin/classes/classes-03.kt) $ :class kotlin
         div (:class "list-group-item border-0")
-          .title "Elvis operator"
+          .title "Primary Constructor"
           .container-fluid
             .row
               .col
@@ -113,7 +124,7 @@ html
                 .lang Kotlin
                 pre.code $ code (@insert ../code/kotlin/classes/classes-04.kt) $ :class kotlin
         div (:class "list-group-item border-0")
-          .title "Strings I"
+          .title "Optional Arguments in Constructors"
           .container-fluid
             .row
               .col
@@ -123,7 +134,7 @@ html
                 .lang Kotlin
                 pre.code $ code (@insert ../code/kotlin/classes/classes-05.kt) $ :class kotlin
         div (:class "list-group-item border-0")
-          .title "Strings II"
+          .title "Properties"
           .container-fluid
             .row
               .col
@@ -136,7 +147,7 @@ html
     .section
       .list-group-flush
         div (:class "list-group-item border-0")
-          .title "Hello world"
+          .title "Abstract Class"
           .container-fluid
             .row
               .col
@@ -146,7 +157,7 @@ html
                 .lang Kotlin
                 pre.code $ code (@insert ../code/kotlin/classes/classes-07.kt) $ :class kotlin
         div (:class "list-group-item border-0")
-          .title "Variables I"
+          .title "Singleton"
           .container-fluid
             .row
               .col
@@ -156,7 +167,7 @@ html
                 .lang Kotlin
                 pre.code $ code (@insert ../code/kotlin/classes/classes-08.kt) $ :class kotlin
         div (:class "list-group-item border-0")
-          .title "Variables II"
+          .title "Extensions"
           .container-fluid
             .row
               .col
@@ -166,7 +177,7 @@ html
                 .lang Kotlin
                 pre.code $ code (@insert ../code/kotlin/classes/classes-09.kt) $ :class kotlin
         div (:class "list-group-item border-0")
-          .title "Null I"
+          .title "Inner Class"
           .container-fluid
             .row
               .col
@@ -176,7 +187,7 @@ html
                 .lang Kotlin
                 pre.code $ code (@insert ../code/kotlin/classes/classes-010.kt) $ :class kotlin
         div (:class "list-group-item border-0")
-          .title "Null I"
+          .title "Nested Class"
           .container-fluid
             .row
               .col
@@ -186,7 +197,7 @@ html
                 .lang Kotlin
                 pre.code $ code (@insert ../code/kotlin/classes/classes-011.kt) $ :class kotlin
         div (:class "list-group-item border-0")
-          .title "Null II"
+          .title "Interface"
           .container-fluid
             .row
               .col

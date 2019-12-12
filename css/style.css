@@ -41,7 +41,7 @@ body {
 }
 
 .code {
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 #fork-me {
@@ -76,11 +76,14 @@ li a:hover {
 
 footer {
     background-color: #414141;
-    font-size: 1.5em;
+    font-size: 1em;
     color: white;
 }
 
-footer a {
-    text-decoration: none;
-    color: dodgerblue;
+nav {
+    background-color: #414141;
+}
+
+nav .active {
+    background-color: #4e4e4e;
 }
