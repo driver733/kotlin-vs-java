@@ -1,33 +1,32 @@
 body {
     font-family: "Helvetica Neue", sans-serif;
-    margin: 0;
 }
 
-body * {
-    box-sizing: border-box;
+.list-group {
+    color: #232323;
 }
 
-.section {
+.list-group-item {
+    color: #232323;
+}
+
+.section .list-group-item {
     background-color: #232323;
-    padding: 2em;
-}
-
-.section:nth-child(2n) {
-    background-color: #1c1c21;
 }
 
 .title {
-    font-size: 2.7em;
+    font-size: 2.5em;
     color: white;
     font-weight: 100;
     letter-spacing: 0.2em;
     text-align: center;
+    padding-bottom: 0.5em;
 }
 
 .case {}
 
 .name {
-    font-size: 1.8em;
+    font-size: 3em;
     color: white;
     font-weight: 300;
     text-align: center;
@@ -35,24 +34,15 @@ body * {
     margin: 0.5em;
 }
 
-.card:last-child {
-    padding-top: 2em;
-}
-
 .lang {
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: white;
-    padding-bottom: 0;
-    padding-left: 0.4em;
     font-weight: 200;
     letter-spacing: 0.07em;
 }
 
 .code {
-    font-size: 1.15em;
-    margin: 0.4em 0 0 0;
-    padding: 0.4em;
-    line-height: 1.3em;
+    font-size: 1em;
 }
 
 #fork-me {
@@ -60,60 +50,41 @@ body * {
     right: 0;
 }
 
-#note {
-    font-size: 1.5em;
+.top-title {
+    font-size: 2em;
     color: #fff;
-    text-align: center;
-    padding: 0.6em;
     background: #414141;
     font-weight: 300;
     letter-spacing: 0.05em;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.header {
     background-color: #414141;
+    font-size: 1.5em;
 }
 
-li {
-    float: left;
-}
-
-li a {
-    display: block;
+.header a {
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
 li a:hover {
     background-color: #3c3c3c;
 }
 
-li a.selected {
+.selected {
     background-color: #4e4e4e;
-}
-
-.center {
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
 }
 
 footer {
     background-color: #414141;
-}
-
-footer a {
+    font-size: 1em;
     color: white;
-    text-decoration: none;
 }
 
-footer p {
-    color: darkgray;
+nav {
+    background-color: #414141;
+}
+
+nav .active {
+    background-color: #4e4e4e;
 }
