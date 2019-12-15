@@ -1,0 +1,1 @@
+File("doc.txt").readText()

@@ -4,19 +4,45 @@ project = 'from-java-to-kotlin'
 require 'shelljs/make'
 path = require 'path'
 mission = require 'mission'
+listFiles = require 'list-files'
+combineFiles = require 'combine-files'
+
+check = (file) -> file != './cirru/header.cirru' && file != './cirru/footer.cirru'
+checkGen = (file) -> file.includes('/generated')
+checkNotGen = (file) -> !checkGen(file)
 
 mission.time()
 
-cirru = (data) ->
+cirru = (file, data) ->
   mission.cirruHtml
-    files: ['index.cirru', 'functions.cirru', 'scoping-functions.cirru', 'classes.cirru', 'collections.cirru', 'concurrency.cirru', 'delegated-properties.cirru', 'dsl.cirru', 'spring-framework.cirru']
-    from: 'cirru/'
+    files: [file]
+    from: 'cirru/generated'
     to: './'
     extname: '.html'
     data: data
+    console.log(data)
 
 target.dev = ->
-  cirru inDev: yes
+  listFiles(
+     (files) ->
+       for file in files.filter(check).filter(checkNotGen)
+         combineFiles(['cirru/header.cirru', file, 'cirru/footer.cirru'], 'cirru/generated/' + file.substring(8))
+     ,
+     {
+       name: 'cirru',
+       exclude: 'node_modules'
+     }
+  )
+  listFiles(
+     (files) ->
+       for file in files.filter(check).filter(checkGen)
+        cirru(file.substring(18),{inDev: yes, "#{file.substring(18, file.indexOf('.', 10)).replace("-", "_")}": yes})
+     ,
+     {
+       name: 'cirru',
+       exclude: 'node_modules'
+     }
+  )
 
 target.watch = ->
   station = mission.reload()
