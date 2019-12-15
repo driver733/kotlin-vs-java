@@ -1,4 +1,9 @@
-node_modules/
+node_modules
+cirru/generated
+build
+*.html
 .DS_Store
+package-lock.json
 *~
 \#*#
+.idea

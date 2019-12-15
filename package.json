@@ -1,20 +1,24 @@
 {
-  "name": "from-java-to-kotlin",
+  "name": "kotlin-vs-java",
   "version": "0.0.1",
   "description": "Kotlin vs Java ------",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "jiyinyiyong, nilhcem, fabiomsr",
+  "author": "jiyinyiyong, nilhcem, fabiomsr, driver733",
   "license": "MIT",
   "devDependencies": {
     "mission": "0.0.7",
-    "shelljs": "^0.3.0"
+    "shelljs": "^0.3.0",
+    "list-files": "1.1.4",
+    "combine-files": "1.1.8"
   },
   "dependencies": {
     "mission": "^0.0.7",
-    "shelljs": "^0.3.0"
+    "shelljs": "^0.3.0",
+    "list-files": "1.1.4",
+    "combine-files": "1.1.8"
   },
   "repository": {
     "type": "git",
