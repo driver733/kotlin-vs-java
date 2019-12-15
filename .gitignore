@@ -1,5 +1,4 @@
 node_modules
-cirru/generated
 build
 *.html
 !start.html
