@@ -1,10 +1,6 @@
 node_modules
 cirru/generated
 build
-*.html
-!start.html
-!start-body.html
-!end.html
 .DS_Store
 package-lock.json
 *~
