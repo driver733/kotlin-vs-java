@@ -1,5 +1,4 @@
 node_modules
-cirru/generated
 build
 .DS_Store
 package-lock.json
