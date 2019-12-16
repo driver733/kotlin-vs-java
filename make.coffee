@@ -20,7 +20,6 @@ cirru = (file, data) ->
     to: './'
     extname: '.html'
     data: data
-    console.log(data)
 
 target.dev = ->
   listFiles(
