@@ -1,8 +1,8 @@
 # Kotlin vs Java
 
-Page: http://driver733.github.io/kotlin-vs-java/
+Web page: https://www.kotlinvs.java.com
 
-Programmatically inspired from [swift-is-like-go](https://github.com/jiyinyiyong/swift-is-like-go) and visually inspired from [swiftislikescala](https://github.com/leverich/swiftislikescala)
+Based on [fabiomsr/from-java-to-kotlin](https://github.com/fabiomsr/from-java-to-kotlin)
 
 ### License
 
@@ -10,10 +10,35 @@ MIT
 
 ### Develop
 
-```bash
-npm i # install dependencies to build tools
-./make.coffee dev # build html
+1. Install npm
+2. Install coffeescript
+3. Install dependencies (`npm i`)
+4. Build html (`./make.coffee dev`)
+
+First, the cirru templates (in `./cirru`) are combined with the header and footer (`./cirru/header.cirru` + `./cirru/{FILE}.cirru` + `./cirru/footer.cirru`).
+Next, the generated cirru templates from the first step (in `./cirru/generated`) are converted into HTML (in `./`).
+
+## Adding new code snippets
+
+The code snippets reside in the `code/java` and `code/kotlin` folders.
+They are referenced in cirru (`./cirru`) templates this way:
+```
+.lang Java
+pre.code $ code (@insert ../../code/java/dsl/04.java) $ :class java
 ```
 
-HTML is generated from `cirru/index.cirru`, `cirru/functions.cirru` and `cirru/classes.cirru`.
-Read those files and you would know what's happening.
+## How to contribute
+
+Fork repository, make changes, send a pull request. I will review
+your changes and apply them to the `master` branch shortly, provided
+they don't violate the quality standards. Before
+sending your pull request please check that the HTML is generated correctly:
+
+```
+./make.coffee dev
+```
+
+## Got questions?
+
+If you have questions or general suggestions, don't hesitate to submit
+a new [Github issue](https://github.com/driver733/kotlin-vs-java/issues/new).
