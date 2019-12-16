@@ -1,12 +1,10 @@
 # Kotlin vs Java
 
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/driver733/kotlin-vs-java/blob/master/LICENSE.txt)
+
 Web page: https://www.kotlinvs.java.com
 
 Based on [fabiomsr/from-java-to-kotlin](https://github.com/fabiomsr/from-java-to-kotlin)
-
-### License
-
-MIT
 
 ### Develop
 
