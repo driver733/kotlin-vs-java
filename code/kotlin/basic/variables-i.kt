@@ -1,3 +1,3 @@
-val x: Int // Compile-time exception
-val y // Compile-time exception
+val x: Int // compile-time error
+val y // compile-time error
 val z = 2
