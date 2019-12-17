@@ -3,4 +3,4 @@ Integer length =
         && bob.department != null
         && bob.department.text != null
     ? bob.department.text.length()
-    : null
+    : null;
