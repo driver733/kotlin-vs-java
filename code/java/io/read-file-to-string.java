@@ -1,12 +1,5 @@
-String content = null;
 try {
-    content = Files
-        .lines(
-            Paths.get("doc.txt"), StandardCharsets.UTF_8
-        ).collect(
-            Collectors.joining(System.lineSeparator())
-        );
+    String content = new String(Files.readAllBytes(Paths.get("doc.txt"), UTF_8));
 } catch (IOException e) {
-    e.printStackTrace();
+    throw new UncheckedIOException(r);
 }
-
