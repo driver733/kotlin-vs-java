@@ -1,9 +1,15 @@
-fun doBothAsync(): CompletableFuture<SomeOtherResult> =
-    doSomethingAsync().thenAcceptBoth(doSomethingElseAsync()) {
-        one, two -> // combine results of both calls here
-    }
+public CompletableFuture<SomeOtherResult> doBothAsync(){
+    doSomethingAsync()
+        .thenAcceptBoth(doSomethingElseAsync()) (
+                (one, two) -> {
+            // combine results of both calls here
+        )}
+}
 
-fun doSequentiallyAsync(): CompletableFuture<SomeOtherResult> =
-    doSomethingAsync().thenCompose {
-            something -> doSomethingElseAsync(something)
-    }
+
+public CompletableFuture<SomeOtherResult> doSequentiallyAsync() {
+    doSomethingAsync().thenCompose(
+        something -> {
+            doSomethingElseAsync(something)
+    })
+}
