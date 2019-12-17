@@ -1,5 +1,9 @@
-public static void main(String[]args){
-  openFile("file.txt", true);
+public class Main {
+    public static void main(final String[] args){
+        openFile("file.txt", true);
+    }
 }
 
-public static File openFile(String filename, boolean readOnly) { }
+class FileUtils {
+    public static File openFile(String filename, boolean readOnly) { }
+}

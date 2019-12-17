@@ -1,27 +1,7 @@
 .section
   .list-group-flush
     div (:class "list-group-item border-0")
-      .title "Hello world"
-      .container-fluid
-        .row
-          .col
-            .lang Java
-            pre.code $ code (@insert ../../code/java/functions/functions-00.java) $ :class java
-          .col
-            .lang Kotlin
-            pre.code $ code (@insert ../../code/kotlin/functions/functions-00.kt) $ :class kotlin
-    div (:class "list-group-item border-0")
-      .title "Variables I"
-      .container-fluid
-        .row
-          .col
-            .lang Java
-            pre.code $ code (@insert ../../code/java/functions/functions-01.java) $ :class java
-          .col
-            .lang Kotlin
-            pre.code $ code (@insert ../../code/kotlin/functions/functions-01.kt) $ :class kotlin
-    div (:class "list-group-item border-0")
-      .title "Variables II"
+      .title "Default and non-null parameters"
       .container-fluid
         .row
           .col
@@ -31,17 +11,7 @@
             .lang Kotlin
             pre.code $ code (@insert ../../code/kotlin/functions/functions-02.kt) $ :class kotlin
     div (:class "list-group-item border-0")
-      .title "Null I"
-      .container-fluid
-        .row
-          .col
-            .lang Java
-            pre.code $ code (@insert ../../code/java/functions/functions-03.java) $ :class java
-          .col
-            .lang Kotlin
-            pre.code $ code (@insert ../../code/kotlin/functions/functions-03.kt) $ :class kotlin
-    div (:class "list-group-item border-0")
-      .title "Null II"
+      .title "Single-statement functions"
       .container-fluid
         .row
           .col
@@ -54,7 +24,7 @@
 .section
   .list-group-flush
     div (:class "list-group-item border-0")
-      .title "Hello world"
+      .title "Vararg"
       .container-fluid
         .row
           .col
@@ -64,17 +34,7 @@
             .lang Kotlin
             pre.code $ code (@insert ../../code/kotlin/functions/functions-05.kt) $ :class kotlin
     div (:class "list-group-item border-0")
-      .title "Variables I"
-      .container-fluid
-        .row
-          .col
-            .lang Java
-            pre.code $ code (@insert ../../code/java/functions/functions-06.java) $ :class java
-          .col
-            .lang Kotlin
-            pre.code $ code (@insert ../../code/kotlin/functions/functions-06.kt) $ :class kotlin
-    div (:class "list-group-item border-0")
-      .title "Variables II"
+      .title "Public functions"
       .container-fluid
         .row
           .col
@@ -84,7 +44,7 @@
             .lang Kotlin
             pre.code $ code (@insert ../../code/kotlin/functions/functions-07.kt) $ :class kotlin
     div (:class "list-group-item border-0")
-      .title "Null I"
+      .title "Default parameters"
       .container-fluid
         .row
           .col
@@ -94,7 +54,7 @@
             .lang Kotlin
             pre.code $ code (@insert ../../code/kotlin/functions/functions-08.kt) $ :class kotlin
     div (:class "list-group-item border-0")
-      .title "Null II"
+      .title "Generic methods"
       .container-fluid
         .row
           .col
@@ -104,7 +64,7 @@
             .lang Kotlin
             pre.code $ code (@insert ../../code/kotlin/functions/functions-09.kt) $ :class kotlin
     div (:class "list-group-item border-0")
-      .title "Null II"
+      .title "Data classes"
       .container-fluid
         .row
           .col

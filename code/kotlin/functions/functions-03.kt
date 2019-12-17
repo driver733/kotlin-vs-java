@@ -1,3 +1,1 @@
-fun hasItems() : Boolean {
-    return true
-}
+fun hasItems() = true

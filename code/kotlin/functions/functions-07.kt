@@ -1,5 +1,5 @@
-fun main(args: Array&ltString&gt) {
-  openFile("file.txt", readOnly = true)
+fun main() {
+  openFile("file.txt", true)
 }
 
 fun openFile(filename: String, readOnly: Boolean) : File { }
