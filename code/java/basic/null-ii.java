@@ -1,7 +1,6 @@
-if (
+Integer length =
     bob != null
         && bob.department != null
         && bob.department.text != null
-    ) {
-  int length = bob.department.text.length();
-}
+    ? bob.department.text.length()
+    : null;
