@@ -1,10 +1,3 @@
-if (nullableVariable != null) {
-    boolean success = nullableVariable.someMethodCall();
-    if (success) {
-        return success;
-    } else {
-        return fallbackIfNullMethodCall();
-    }
-} else {
-    return fallbackIfNullMethodCall();
-}
+val result = Optional.ofNullable(nullableVariable)
+    .flatMap(v -> Optinal.ofNullable(v.someNullableMethodCall()))
+    .orElseGet(() -> fallbackIfNullMethodCall())
