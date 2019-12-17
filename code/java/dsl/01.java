@@ -6,6 +6,6 @@ val order = Sandwich()
     .side("Crisps")
     .makeMeASandwich()
 
-println(ooSandwich.receipt())
+System.out.println(ooSandwich.receipt())
 
 // https://www.kotlindays.com/2019/12/02/days-of-kotlin-a-dsl-for-everyone/index.html

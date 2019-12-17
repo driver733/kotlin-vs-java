@@ -31,12 +31,12 @@ switch (x){
 final int y = // value;
 final String yResult;
 
-if(isNegative(y)){
+if (isNegative(y)) {
   yResult = "is Negative";
 } else if(isZero(y)){
   yResult = "is Zero";
-}else if(isOdd(y)){
+} else if(isOdd(y)){
   yResult = "is Odd";
-}else {
+} else {
   yResult = "otherwise";
 }

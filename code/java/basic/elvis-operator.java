@@ -1,10 +1,10 @@
 if (nullableVariable != null) {
-    boolean success = nullableVariable.someMethodCall()
+    boolean success = nullableVariable.someMethodCall();
     if (success) {
-        return success
+        return success;
     } else {
-        return fallbackIfNullMethodCall()
+        return fallbackIfNullMethodCall();
     }
 } else {
-    return fallbackIfNullMethodCall()
+    return fallbackIfNullMethodCall();
 }
