@@ -1,4 +1,3 @@
-var w: Int
+var q // Compile-time exception
+var w: Int // Compile-time exception
 var z = 2
-z = 3
-w = 1 
