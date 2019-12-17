@@ -1,6 +1,5 @@
 public static void main(String[]args) {
-    Book book = createBook();
-
+    val book = createBook();
     System.out.println(book);
     System.out.println("Title: " + book.title);
 }
@@ -9,6 +8,8 @@ public static Book createBook(){
     return new Book("title_01", "author_01");
 }
 
-@Data
+@Data // Lombok
 public class Book {
+    private final String title;
+    private final String author;
 }
