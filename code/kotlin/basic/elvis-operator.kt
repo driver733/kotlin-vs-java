@@ -1,1 +1,1 @@
-val result = nullableVariable?.someMethodCall() ?: fallbackIfNullMethodCall()
+val result = nullableVariable?.someNullableMethodCall() ?: fallbackIfNullMethodCall()
