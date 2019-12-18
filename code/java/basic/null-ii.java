@@ -1,4 +1,4 @@
-Integer length =
+final Integer length =
     bob != null
         && bob.department != null
         && bob.department.text != null

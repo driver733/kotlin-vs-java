@@ -1,8 +1,8 @@
-val act = this;
-val layout = new LinearLayout(act);
+final var act = this;
+final var layout = new LinearLayout(act);
 layout.setOrientation(LinearLayout.VERTICAL);
-val name = new EditText(act);
-val button = new Button(act);
+final var name = new EditText(act);
+final var button = new Button(act);
 button.setText("Say Hello");
 button.setOnClickListener(
     () -> {

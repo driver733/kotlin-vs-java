@@ -1,4 +1,4 @@
-String name = "John";
-String lastName = "Smith";
-String text = "My name is: " + name + " " + lastName;
-String otherText = "My name is: " + name.substring(2);
+final var name = "John";
+final var lastName = "Smith";
+final var text = "My name is: " + name + " " + lastName;
+final var otherText = "My name is: " + name.substring(2);

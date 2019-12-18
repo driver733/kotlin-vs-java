@@ -1,3 +1,3 @@
-String text = "First Line\n" +
+final var text = "First Line\n" +
               "Second Line\n" +
               "Third Line";

@@ -1,1 +1,1 @@
-final File file = new File("file.txt");
+final var file = new File("file.txt");

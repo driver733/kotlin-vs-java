@@ -4,5 +4,5 @@ public class ByteArrayUtils {
       }
   }
 
-  final byte[] dummyData = new byte[10];
-  final String hexValue = ByteArrayUtils.toHexString(dummyData);
+  final var dummyData = new byte[10];
+  final var hexValue = ByteArrayUtils.toHexString(dummyData);
