@@ -23,7 +23,7 @@ meta (:name theme-color) (:content #ffffff)
 
 @insert ../../start-body.html
 
-div (:class "container-fluid text-center top-title")
+div (:class "container-fluid text-center header-title")
   div (:class "row text-center")
     .col
       p
