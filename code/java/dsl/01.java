@@ -1,4 +1,4 @@
-val order = Sandwich()
+final var order = Sandwich()
     .type("toastie")
     .bread("white")
     .fillings(List.of("Cheese", "Ham"))

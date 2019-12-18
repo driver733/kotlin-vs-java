@@ -1,3 +1,3 @@
-if(a instanceof String){
-  final String result = ((String) a).substring(1);
+if (a instanceof String) {
+  final var result = ((String) a).substring(1);
 }
