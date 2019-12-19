@@ -51,6 +51,16 @@
             .lang Kotlin
             pre.code $ code (@insert ../../code/kotlin/collections/05.kt) $ :class kotlin
     div (:class "list-group-item border-0")
+      .title "CollectingAndThen"
+      .container-fluid
+        .row
+          .col
+            .lang Java
+            pre.code $ code (@insert ../../code/java/collections/collecting-and-then.java) $ :class java
+          .col
+            .lang Kotlin
+            pre.code $ code (@insert ../../code/kotlin/collections/collecting-and-then.kt) $ :class kotlin
+    div (:class "list-group-item border-0")
       .title "For"
       .container-fluid
         .row
