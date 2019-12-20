@@ -1,19 +1,13 @@
-fun <A> inTransaction(f: (Connection) -> CompletableFuture<A>)
-        : CompletableFuture<A> {
-            return this.sendQuery("BEGIN").flatMap {
-                _ ->
-                    val p = CompletableFuture<A>()
-                    f(this).onComplete {
-                        ty1 ->
-                        sendQuery(if (ty1.isFailure) "ROLLBACK" else "COMMIT")
-                        .onComplete {
-                            ty2 ->
-                                if (ty2.isFailure && ty1.isSuccess)
-                                    p.failed((ty2 as Failure).exception)
-                                else
-                                    p.complete(ty1)
-                            }
-                    }
-                    p
-            }
-        }
+public <A> CompletableFuture<A> inTransaction(DatabaseFunction<A> fun) {
+    return CompletableFuture
+    .runAsync(() -> this.sendQuery("BEGIN"))
+    .thenApply(x -> fun.execute(this))
+    .thenApply(s -> {
+    this.sendQuery("COMMIT");
+    return s;
+    })
+    .exceptionally(throwable -> {
+    this.sendQuery("ROLLBACK");
+    return null;
+    });
+}
