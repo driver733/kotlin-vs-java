@@ -1,6 +1,6 @@
 final var callables = Stream.of("Service A", "Service B", "Service C")
         .map(DummyService::new)
-        .map(service -> (Callable<ContentDuration>) service::getContent)
+        .map(service -> (Callable&ltContentDuration&gt) service::getContent)
         .collect(Collectors.toList());
 
 final var executor = Executors.newWorkStealingPool();

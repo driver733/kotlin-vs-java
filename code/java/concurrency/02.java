@@ -1,8 +1,8 @@
-fun <A> inTransaction(f: (Connection) -> CompletableFuture<A>)
-        : CompletableFuture<A> {
+fun &ltA&gt inTransaction(f: (Connection) -> CompletableFuture&ltA&gt)
+        : CompletableFuture&ltA&gt {
             return this.sendQuery("BEGIN").flatMap {
                 _ ->
-                    val p = CompletableFuture<A>()
+                    val p = CompletableFuture&ltA&gt()
                     f(this).onComplete {
                         ty1 ->
                         sendQuery(if (ty1.isFailure) "ROLLBACK" else "COMMIT")

@@ -3,7 +3,7 @@
 @RequiredArgsConstructor // Lombok
 @Data // Lombok
 public class AppProperties {
-    private final List<Location> location;
+    private final List&ltLocation&gt location;
     private final Git git;
     private final Integer limit;
     @NotBlank
