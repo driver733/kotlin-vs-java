@@ -1,3 +1,3 @@
 final var result = Optional.ofNullable(nullableVariable)
-    .flatMap(v -> Optinal.ofNullable(v.someNullableMethodCall()))
+    .flatMap(v -> Optional.ofNullable(v.someNullableMethodCall()))
     .orElseGet(() -> fallbackIfNullMethodCall())
