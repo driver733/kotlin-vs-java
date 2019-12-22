@@ -1,4 +1,4 @@
-suspend fun <T> inTransaction(
+suspend fun &ltT&gt inTransaction(
     f: suspend (Connection) -> T): T {
     try {
         this.sendQuery("BEGIN")

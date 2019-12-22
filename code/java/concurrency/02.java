@@ -1,4 +1,4 @@
-public <T> CompletableFuture<T> inTransaction(DatabaseFunction<T> fun) {
+public &ltT&gt CompletableFuture&ltT&gt inTransaction(DatabaseFunction&ltT&gt fun) {
     return CompletableFuture
     .runAsync(() -> this.sendQuery("BEGIN"))
     .thenApply(ignored -> fun.execute(this))

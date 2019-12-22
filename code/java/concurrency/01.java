@@ -1,4 +1,4 @@
-public CompletableFuture<SomeOtherResult> doBothAsync(){
+public CompletableFuture&ltSomeOtherResult&gt doBothAsync(){
     doSomethingAsync()
         .thenAcceptBoth(doSomethingElseAsync()) (
                 (one, two) -> {
@@ -7,7 +7,7 @@ public CompletableFuture<SomeOtherResult> doBothAsync(){
 }
 
 
-public CompletableFuture<SomeOtherResult> doSequentiallyAsync() {
+public CompletableFuture&ltSomeOtherResult&gt doSequentiallyAsync() {
     doSomethingAsync().thenCompose(
         something -> {
             doSomethingElseAsync(something)

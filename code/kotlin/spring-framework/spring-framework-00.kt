@@ -1,7 +1,7 @@
 @ImmutableConfigurationProperties(prefix = "dependency.updates")
 @Validated
 data class AppProperties(
-    val locations: List<Location>,
+    val locations: List&ltLocation&gt,
     val git: Git,
     val limit: Int,
     @field:NotBlank

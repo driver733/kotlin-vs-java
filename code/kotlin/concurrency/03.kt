@@ -1,4 +1,4 @@
-val DummyService.asyncContent: Deferred<ContentDuration>
+val DummyService.asyncContent: Deferred&ltContentDuration&gt
     get() = async(CommonPool) { content }
 
 var results = runBlocking {
