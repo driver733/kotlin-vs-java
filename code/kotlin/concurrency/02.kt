@@ -1,5 +1,5 @@
-suspend fun &ltA&gt inTransaction(
-    f: suspend (Connection) -> A): A {
+suspend fun &ltT&gt inTransaction(
+    f: suspend (Connection) -> T): T {
     try {
         this.sendQuery("BEGIN")
         val result = f(this)
