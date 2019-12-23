@@ -1,0 +1,35 @@
+version: 2
+
+references:
+  default_docker_executor: &default_docker_executor
+    image: circleci/node:12.14.0-buster
+
+jobs:
+  build:
+    docker:
+      - *default_docker_executor
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - kotlin-vs-java-package-{{ checksum "package.json" }}
+            - kotlin-vs-java-package-
+      - run:
+          name: npm-update
+          command: 'sudo npm install -g npm@5'
+      - run:
+          name: npm-install
+          command: npm install
+      - run:
+          name: generate-html
+          command: ./make.coffee dev
+      - save_cache:
+          key: kotlin-vs-java-package-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
