@@ -16,7 +16,7 @@ jobs:
             - kotlin-vs-java-package-
       - run:
           name: npm-update
-          command: 'sudo npm install -g npm@next'
+          command: 'sudo npm install -g npm@latest'
       - run:
           name: npm-install-node-gyp
           command: 'sudo npm install -g node-gyp'
