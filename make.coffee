@@ -10,6 +10,7 @@ combineFiles = require 'combine-files'
 check = (file) -> file != './cirru/header.cirru' && file != './cirru/footer.cirru'
 checkGen = (file) -> file.includes('/generated')
 checkNotGen = (file) -> !checkGen(file)
+sleep = (s) -> new Promise (resolve) -> setTimeout(resolve, s * 1000)
 
 mission.time()
 
@@ -32,16 +33,20 @@ target.dev = ->
        exclude: 'node_modules'
      }
   )
-  listFiles(
-     (files) ->
-       for file in files.filter(check).filter(checkGen)
-        cirru(file.substring(18),{inDev: yes, "#{file.substring(18, file.indexOf('.', 10)).replace("-", "_")}": yes})
-     ,
-     {
-       name: 'cirru',
-       exclude: 'node_modules'
-     }
-  )
+  sleep(0.1).then(
+    () ->
+        listFiles(
+             (files) ->
+               for file in files.filter(check).filter(checkGen)
+                cirru(file.substring(18),{inDev: yes, "#{file.substring(18, file.indexOf('.', 10)).replace("-", "_")}": yes})
+             ,
+             {
+               name: 'cirru',
+               exclude: 'node_modules'
+             }
+          )
+  );
+
 
 target.watch = ->
   station = mission.reload()
