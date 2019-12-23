@@ -1,17 +1,29 @@
 # Kotlin vs Java
 
+[![Build Status](https://img.shields.io/circleci/build/github/driver733/kotlin-vs-java)](https://circleci.com/gh/driver733/kotlin-vs-java)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/driver733/kotlin-vs-java/blob/master/LICENSE.txt)
 
 Web page: https://www.kotlinvsjava.com
 
-Based on [fabiomsr/from-java-to-kotlin](https://github.com/fabiomsr/from-java-to-kotlin)
+Based on: [fabiomsr/from-java-to-kotlin](https://github.com/fabiomsr/from-java-to-kotlin)
 
 ### Develop
 
 1. Install npm
 2. Install coffeescript
-3. Install dependencies (`npm i`)
-4. Build html (`./make.coffee dev`)
+
+    `npm install -g coffeescript`
+3. Install node-gyp
+
+    `npm install -g node-gyp`
+4. Install dependencies 
+
+    `npm install`
+5. Generate html 
+
+    `./make.coffee dev`
+
+## HTML generation
 
 First, the cirru templates (in `./cirru`) are combined with the header and footer (`./cirru/header.cirru` + `./cirru/{FILE}.cirru` + `./cirru/footer.cirru`).
 Next, the generated cirru templates from the first step (in `./cirru/generated`) are converted into HTML (in `./`).

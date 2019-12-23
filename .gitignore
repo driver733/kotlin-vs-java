@@ -5,7 +5,6 @@ build
 !start.html
 !start-body.html
 !end.html
-package-lock.json
 *~
 \#*#
 .idea
