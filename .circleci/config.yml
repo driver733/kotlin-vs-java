@@ -2,7 +2,7 @@ version: 2
 
 references:
   default_docker_executor: &default_docker_executor
-    image: circleci/node:12.14.0-buster
+    image: circleci/node:13.5.0-buster
 
 jobs:
   build:
@@ -16,10 +16,16 @@ jobs:
             - kotlin-vs-java-package-
       - run:
           name: npm-update
-          command: 'sudo npm install -g npm@5'
+          command: 'sudo npm install -g npm@next'
+      - run:
+          name: npm-install-node-gyp
+          command: 'sudo npm install -g node-gyp'
+      - run:
+          name: npm-install-coffeescript
+          command: 'sudo npm install -g coffeescript'
       - run:
           name: npm-install
-          command: npm install
+          command: 'sudo npm install'
       - run:
           name: generate-html
           command: ./make.coffee dev
