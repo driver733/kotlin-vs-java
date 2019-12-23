@@ -1,8 +1,8 @@
-interface Printable{
+interface Printable {
     fun print()
 }
 
-class Document : Printable{
+class Document : Printable {
     override fun print() {
 
     }
