@@ -1,6 +1,6 @@
 # Kotlin vs Java
 
-[![Build Status](https://img.shields.io/circleci/build/github/driver733/kotlin-vs-java)](https://circleci.com/gh/driver733/kotlin-vs-java)
+[![Build Status](https://travis-ci.com/driver733/kotlin-vs-java.svg)](https://travis-ci.com/driver733/kotlin-vs-java)
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/driver733/kotlin-vs-java/blob/master/LICENSE.txt)
 

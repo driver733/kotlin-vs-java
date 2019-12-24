@@ -1,0 +1,17 @@
+dist: trusty
+language: node_js
+node_js:
+  - "stable"
+jobs:
+  fast_finish: true
+
+before_install:
+  - 'npm install -g npm@latest'
+  - 'npm install -g node-gyp'
+  - 'npm install -g coffeescript'
+
+install:
+  - 'npm install'
+
+script:
+  - './make.coffee dev'
