@@ -1,10 +1,6 @@
 node_modules
 build
 .DS_Store
-*.html
-!start.html
-!start-body.html
-!end.html
 *~
 \#*#
 .idea

@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.com/driver733/kotlin-vs-java.svg)](https://travis-ci.com/driver733/kotlin-vs-java)
 
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=driver733/kotlin-vs-java)](https://dependabot.com)
+
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/driver733/kotlin-vs-java/blob/master/LICENSE.txt)
 
 Web page: [https://www.kotlinvsjava.com](https://www.kotlinvsjava.com)
