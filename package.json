@@ -9,7 +9,7 @@
   "author": "jiyinyiyong, nilhcem, fabiomsr, driver733",
   "license": "MIT",
   "dependencies": {
-    "mission": "0.0.8-1",
+    "mission": "0.0.9",
     "shelljs": "0.8.3",
     "list-files": "1.1.4",
     "combine-files": "1.1.8"
