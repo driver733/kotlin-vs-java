@@ -10,7 +10,7 @@ combineFiles = require 'combine-files'
 check = (file) -> file != './cirru/header.cirru' && file != './cirru/footer.cirru'
 checkGen = (file) -> file.includes('/generated')
 checkNotGen = (file) -> !checkGen(file)
-sleep = (s) -> new Promise (resolve) -> setTimeout(resolve, s * 1000)
+sleep = (ms) -> new Promise (resolve) -> setTimeout(resolve, ms)
 
 mission.time()
 
@@ -33,7 +33,7 @@ target.dev = ->
        exclude: 'node_modules'
      }
   )
-  sleep(0.1).then(
+  sleep(200).then(
     () ->
         listFiles(
              (files) ->
