@@ -22,7 +22,7 @@ Based on: [fabiomsr/from-java-to-kotlin](https://github.com/fabiomsr/from-java-t
 4. Install dependencies 
 
     `npm install`
-5. Generate html 
+5. Generate HTML
 
     `./make.coffee dev`
 

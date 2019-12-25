@@ -59,7 +59,57 @@ users.sortedBy { it.lastname }
     .filter { it.first != "Boss" }
     .maxBy { it.second }
     ?.run { first }
-    ?: throw IllegalStateException("No employees")</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">For</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">for (int i = 1; i < 11 ; i++) { }
+    ?: throw IllegalStateException("No employees")</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Fold</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">private &ltT&gt Double calculateTotals(final Grid&ltT&gt grid) {
+    return grid.getRows()
+        .stream()
+        .flatMap(e -> e.getColumns().stream())
+        .collect(Collectors.groupingBy(Column::getTitle))
+        .entrySet()
+        .stream()
+        .flatMap(e -> e.getValue().stream())
+        .map(Column::getValue)
+        .reduce(
+            0.0,
+            (accumulator, value) ->
+                value instanceof Number
+                    ? accumulator + ((Number) (value)).doubleValue()
+                    : accumulator,
+            Double::sum
+        );
+
+@Data // Lombok
+class Grid&ltT&gt {
+    private final List<Row&ltT&gt> rows;
+}
+
+@Data // Lombok
+class Row&ltT&gt {
+    private final List<Column&ltT&gt> columns;
+}
+
+@Data // Lombok
+class Column&ltT&gt {
+    private final String title;
+    private final T value;
+}</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">fun &ltT&gt calculateTotals(grid: Grid&ltT&gt) =
+    grid.rows
+        .flatMap(Row&ltT&gt::columns)
+        .groupingBy(Column&ltT&gt::title)
+        .fold(0.0) {
+            accumulator,
+            (_, value) ->
+                accumulator +
+                        when (value) {
+                            is Number -> value.toDouble()
+                            else -> 0.0
+                        }
+        }
+
+data class Grid&ltT&gt(val rows: List<Row&ltT&gt>)
+data class Row&ltT&gt(val columns: List<Column&ltT&gt>)
+data class Column&ltT&gt(val title: String, val value: T)
+
+// https://kotlinexpertise.com/kotlin-productivity/</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">For</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">for (int i = 1; i < 11 ; i++) { }
 
 for (int i = 1; i < 11 ; i+=2) { }
 

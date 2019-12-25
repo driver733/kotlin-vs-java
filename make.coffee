@@ -33,7 +33,7 @@ target.dev = ->
        exclude: 'node_modules'
      }
   )
-  sleep(200).then(
+  sleep(300).then(
     () ->
         listFiles(
              (files) ->
