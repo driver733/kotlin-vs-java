@@ -4,9 +4,9 @@ node_js:
   - "stable"
 skip_cleanup: true
 stages:
-  - name: build
+  - build
   - name: deploy
-    if: branch = master
+    if: branch = master AND type = push
 jobs:
   include:
     - stage: build
@@ -19,7 +19,6 @@ jobs:
       script:
         - ./make.coffee dev
     - stage: deploy
-      if: branch = master
       script:
         - ./make.coffee dev
         - git checkout master
