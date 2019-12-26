@@ -1,24 +1,23 @@
 dist: trusty
 language: node_js
-branches:
-  only:
-    - /.*/
-skip_cleanup: true
 node_js:
   - "stable"
-before_install:
-  - 'npm install -g npm@latest'
-  - 'npm install -g node-gyp'
-  - 'npm install -g coffeescript'
-install:
-  - 'npm install'
-script:
-  - './make.coffee dev'
+skip_cleanup: true
 stages:
+  - name: build
   - name: deploy
     if: branch = master
 jobs:
   include:
+    - stage: build
+      before_install:
+        - 'npm install -g npm@latest'
+        - 'npm install -g node-gyp'
+        - 'npm install -g coffeescript'
+      install:
+        - 'npm install'
+      script:
+        - './make.coffee dev'
     - stage: deploy
       after_success:
         - git checkout master
