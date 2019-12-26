@@ -23,4 +23,4 @@ jobs:
         - git checkout master
         - ./make.coffee dev
         - git add .
-        - if [ ! -z "$(git status --untracked-files=no --porcelain)" ]; then git commit -m "Regenerated HTML"; git push https://${GITHUB_TOKEN}@github.com/driver733/kotlin-vs-java.git; fi
+        - if [ ! -z "$(git status --untracked-files=no --porcelain)" ]; echo "Regenerating HTML..."; echo "Commiting regenerated HTML..."; then git commit -m "Regenerated HTML"; echo "Pushing regenerated HTML..."; git push https://${GITHUB_TOKEN}@github.com/driver733/kotlin-vs-java.git; fi
