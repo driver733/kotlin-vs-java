@@ -20,8 +20,7 @@ jobs:
         - ./make.coffee dev
     - stage: deploy
       script:
-        - ./make.coffee dev
         - git checkout master
+        - ./make.coffee dev
         - git add .
-        - git commit -m "Regenerated HTML"
-        - git push https://${GITHUB_TOKEN}@github.com/driver733/kotlin-vs-java.git
+        - if ![ -z "$(git status --untracked-files=no --porcelain)" ]; then git commit -m "Regenerated HTML"; git push https://${GITHUB_TOKEN}@github.com/driver733/kotlin-vs-java.git; fi
