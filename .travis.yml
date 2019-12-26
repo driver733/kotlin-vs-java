@@ -28,5 +28,5 @@ jobs:
             git commit -m "Regenerated HTML";
             git push https://${GITHUB_TOKEN}@github.com/driver733/kotlin-vs-java.git;
           else
-            echo "No changes in regenerated HTML files";
+            echo "No changes in generated HTML files";
           fi
