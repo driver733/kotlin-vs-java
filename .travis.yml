@@ -1,23 +1,26 @@
 dist: trusty
 language: node_js
-skip_cleanup: true
 node_js:
   - "stable"
-before_install:
-  - 'npm install -g npm@latest'
-  - 'npm install -g node-gyp'
-  - 'npm install -g coffeescript'
-install:
-  - 'npm install'
-script:
-  - './make.coffee dev'
+skip_cleanup: true
 stages:
+  - build
   - name: deploy
-    if: branch = master
+    if: branch = master AND type = push
 jobs:
   include:
+    - stage: build
+      before_install:
+        - npm install -g npm@latest
+        - npm install -g node-gyp
+        - npm install -g coffeescript
+      install:
+        - npm install
+      script:
+        - ./make.coffee dev
     - stage: deploy
-      after_success:
+      script:
+        - ./make.coffee dev
         - git checkout master
         - git add .
         - git commit -m "Regenerated HTML"

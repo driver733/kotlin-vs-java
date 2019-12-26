@@ -31,7 +31,7 @@ Based on: [fabiomsr/from-java-to-kotlin](https://github.com/fabiomsr/from-java-t
 First, the cirru templates (in `./cirru`) are combined with the header
 and footer (`./cirru/header.cirru` + `./cirru/{FILE}.cirru` + `./cirru/footer.cirru`).
 Next, the generated cirru templates from the first step (in `./cirru/generated`)
-are converted into HTML (in `./`).lk
+are converted into HTML (in `./`).
 
 ## CI/CD
 
