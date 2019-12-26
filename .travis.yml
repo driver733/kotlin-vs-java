@@ -20,4 +20,4 @@ jobs:
         after_success:
           - git add .
           - git commit -m "Regenerated HTML"
-          - git push origin master
+          - git push https://${GITHUB_TOKEN}@github.com/driver733/kotlin-vs-java.git
