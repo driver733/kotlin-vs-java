@@ -16,9 +16,9 @@ stages:
     if: branch = master
 jobs:
   include:
-      - stage: deploy
-        after_success:
-          - git checkout master
-          - git add .
-          - git commit -m "Regenerated HTML"
-          - git push https://${GITHUB_TOKEN}@github.com/driver733/kotlin-vs-java.git
+    - stage: deploy
+      after_success:
+        - git checkout master
+        - git add .
+        - git commit -m "Regenerated HTML"
+        - git push https://${GITHUB_TOKEN}@github.com/driver733/kotlin-vs-java.git
