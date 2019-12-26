@@ -1,5 +1,8 @@
 dist: trusty
 language: node_js
+branches:
+  only:
+    - /.*/
 skip_cleanup: true
 node_js:
   - "stable"
