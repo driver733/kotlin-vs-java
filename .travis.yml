@@ -1,27 +1,23 @@
 dist: trusty
 language: node_js
+skip_cleanup: true
 node_js:
   - "stable"
 before_install:
   - 'npm install -g npm@latest'
   - 'npm install -g node-gyp'
   - 'npm install -g coffeescript'
-
 install:
   - 'npm install'
-
+script:
+  - './make.coffee dev'
 stages:
   - name: deploy
     if: branch = master
-
-script:
-  - './make.coffee dev'
-
 jobs:
   include:
       - stage: deploy
-        os: linux
         after_success:
           - git add .
           - git commit -m "Regenerated HTML"
-          - git push https://${GITHUB_TOKEN}@github.com/driver733/kotlin-vs-java.git
+          - git push origin master
