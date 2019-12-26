@@ -11,22 +11,17 @@ jobs:
   include:
     - stage: build
       before_install:
-        - 'npm install -g npm@latest'
-        - 'npm install -g node-gyp'
-        - 'npm install -g coffeescript'
+        - npm install -g npm@latest
+        - npm install -g node-gyp
+        - npm install -g coffeescript
       install:
-        - 'npm install'
+        - npm install
       script:
-        - './make.coffee dev'
+        - ./make.coffee dev
     - stage: deploy
-#      before_install:
-#        - 'npm install -g npm@latest'
-#        - 'npm install -g node-gyp'
-#        - 'npm install -g coffeescript'
-#      install:
-#        - 'npm install'
+      if: branch = master
       script:
-        - './make.coffee dev'
+        - ./make.coffee dev
         - git checkout master
         - git add .
         - git commit -m "Regenerated HTML"
