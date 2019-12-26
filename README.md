@@ -28,12 +28,15 @@ Based on: [fabiomsr/from-java-to-kotlin](https://github.com/fabiomsr/from-java-t
 
 ## HTML generation
 
-First, the cirru templates (in `./cirru`) are combined with the header and footer (`./cirru/header.cirru` + `./cirru/{FILE}.cirru` + `./cirru/footer.cirru`).
-Next, the generated cirru templates from the first step (in `./cirru/generated`) are converted into HTML (in `./`).
+First, the cirru templates (in `./cirru`) are combined with the header
+and footer (`./cirru/header.cirru` + `./cirru/{FILE}.cirru` + `./cirru/footer.cirru`).
+Next, the generated cirru templates from the first step (in `./cirru/generated`)
+are converted into HTML (in `./`).
 
 ## CI/CD
 
-TravisCI automatically regenerates HTML files on each merge commit made to the master branch. Therefore, HTML files must not be committed manually (e.g. in pull requests).
+TravisCI automatically regenerates HTML files on each merge commit made to the master branch.
+Therefore, HTML files must not be committed manually (e.g. in pull requests).
 
 ## Adding new code snippets
 
