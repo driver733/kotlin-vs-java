@@ -51,6 +51,16 @@
             .lang Kotlin
             pre.code $ code (@insert ../../code/kotlin/collections/05.kt) $ :class kotlin
     div (:class "list-group-item border-0")
+      .title "Infix functions"
+      .container-fluid
+        .row
+          .col
+            .lang Java
+            pre.code $ code (@insert ../../code/java/collections/09_CollectionsInfixFunctions.java) $ :class java
+          .col
+            .lang Kotlin
+            pre.code $ code (@insert ../../code/kotlin/collections/09_CollectionsInfixFunctions.kt) $ :class kotlin
+    div (:class "list-group-item border-0")
       .title "CollectingAndThen"
       .container-fluid
         .row
