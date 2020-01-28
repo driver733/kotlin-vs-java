@@ -1,2 +1,2 @@
 val users = getUsers()
-users.sortedBy { it.lastname }
+users.sortBy { it.lastname }
