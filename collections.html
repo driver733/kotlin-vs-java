@@ -38,7 +38,11 @@ final var odds = partitioned.get(false);
 users.sort(Comparator.comparing(user -> user.lastname));
 </code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val users = getUsers()
 users.sortBy { it.lastname }
-</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">CollectingAndThen</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">final var topPaidEmployee = Map.of(
+</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Infix functions</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">var list = List.of("a", "b", "c")
+list.add("d")
+list.remove("d")</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val list = mutableListOf("a", "b", "c")
+list += "d"
+list -= "d"</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">CollectingAndThen</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">final var topPaidEmployee = Map.of(
     "Alex", 250,
     "Boss", 999,
     "Chris", 400
