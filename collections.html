@@ -37,7 +37,7 @@ final var odds = partitioned.get(false);
 </code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Collections</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">final var users = getUsers();
 users.sort(Comparator.comparing(user -> user.lastname));
 </code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val users = getUsers()
-users.sortedBy { it.lastname }
+users.sortBy { it.lastname }
 </code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">CollectingAndThen</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">final var topPaidEmployee = Map.of(
     "Alex", 250,
     "Boss", 999,
