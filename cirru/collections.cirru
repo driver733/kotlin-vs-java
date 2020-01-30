@@ -51,15 +51,15 @@
             .lang Kotlin
             pre.code $ code (@insert ../../code/kotlin/collections/05_SortBy.kt) $ :class kotlin
     div (:class "list-group-item border-0")
-      .title "For"
+      .title "Fold"
       .container-fluid
         .row
           .col
             .lang Java
-            pre.code $ code (@insert ../../code/java/collections/06_For.java) $ :class java
+            pre.code $ code (@insert ../../code/java/collections/06_Fold.java) $ :class java
           .col
             .lang Kotlin
-            pre.code $ code (@insert ../../code/kotlin/collections/06_For.kt) $ :class kotlin
+            pre.code $ code (@insert ../../code/kotlin/collections/06_Fold.kt) $ :class kotlin
     div (:class "list-group-item border-0")
       .title "AssociateBy"
       .container-fluid
@@ -101,13 +101,23 @@
             .lang Kotlin
             pre.code $ code (@insert ../../code/kotlin/collections/10_CollectingAndThen.kt) $ :class kotlin
     div (:class "list-group-item border-0")
-      .title "Fold"
+      .title "For"
       .container-fluid
         .row
           .col
             .lang Java
-            pre.code $ code (@insert ../../code/java/collections/11_Fold.java) $ :class java
+            pre.code $ code (@insert ../../code/java/collections/11_For.java) $ :class java
           .col
             .lang Kotlin
-            pre.code $ code (@insert ../../code/kotlin/collections/11_Fold.kt) $ :class kotlin
+            pre.code $ code (@insert ../../code/kotlin/collections/11_For.kt) $ :class kotlin
+    div (:class "list-group-item border-0")
+      .title "Repeat"
+      .container-fluid
+        .row
+          .col
+            .lang Java
+            pre.code $ code (@insert ../../code/java/collections/12_Repeat.java) $ :class java
+          .col
+            .lang Kotlin
+            pre.code $ code (@insert ../../code/kotlin/collections/12_Repeat.kt) $ :class kotlin
 
