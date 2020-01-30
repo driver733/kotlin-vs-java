@@ -120,4 +120,14 @@
           .col
             .lang Kotlin
             pre.code $ code (@insert ../../code/kotlin/collections/12_Repeat.kt) $ :class kotlin
+    div (:class "list-group-item border-0")
+      .title "Comparators"
+      .container-fluid
+        .row
+          .col
+            .lang Java
+            pre.code $ code (@insert ../../code/java/collections/13_Comparators.java) $ :class java
+          .col
+            .lang Kotlin
+            pre.code $ code (@insert ../../code/kotlin/collections/13_Comparators.kt) $ :class kotlin
 
