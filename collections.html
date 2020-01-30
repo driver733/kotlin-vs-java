@@ -38,58 +38,7 @@ final var odds = partitioned.get(false);
 users.sort(Comparator.comparing(user -> user.lastname));
 </code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val users = getUsers()
 users.sortBy { it.lastname }
-</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">For</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">for (int i = 1; i < 11 ; i++) { }
-
-for (int i = 1; i < 11 ; i+=2) { }
-
-for (String item : collection) { }
-
-for (var entry: map.entrySet()) { }
-</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">for (i in 1 until 11) { }
-
-for (i in 1..10 step 2) {}
-
-for (item in collection) {}
-for ((index, item) in collection.withIndex()) {}
-
-for ((key, value) in map) {}
-</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">AssociateBy</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">final var map = currencies.stream()
-    .collect(
-        Collectors.toMap(
-            Currency::getCode,
-            Function.identity()
-        )
-    );</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val map = currencies.associateBy { it.code }</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Zip</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">final var numbers = List.of(1, 2, 3);
-final var names = List.of("Jack", "Michael", "Bob");
-IntStream
-    .range(0, Math.min(names.size(), ages.size()))
-    .mapToObj(i -> names.get(i) + ":" + ages.get(i))
-    .collect(Collectors.toList());</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val pairs = listOf(1, 2, 3).zip(listOf("one", "two", "three")) // List<Pair<Int, String>></code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Infix functions</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">var list = List.of("a", "b", "c")
-list.add("d")
-list.remove("d")</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val list = mutableListOf("a", "b", "c")
-list += "d"
-list -= "d"</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">CollectingAndThen</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">final var topPaidEmployee = Map.of(
-    "Alex", 250,
-    "Boss", 999,
-    "Chris", 400
-).entrySet()
-    .stream()
-    .filter(employee -> !employee.getValue().equals("Boss"))
-    .collect(
-        Collectors.collectingAndThen(
-            Collectors.maxBy(Comparator.comparing(Map.Entry::getValue)),
-            employee -> {
-                if (employee.isPresent() {
-                    return employee.getKey(); 
-                }
-                throw new IllegalStateException("No employees");
-            }
-        )
-    );</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val topPaidEmployee = listOf("Alex" to 250, "Boss" to 999, "Chris" to 400)
-    .filter { it.first != "Boss" }
-    .maxBy { it.second }
-    ?.run { first }
-    ?: throw IllegalStateException("No employees")</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Fold</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">private &ltT&gt Double calculateTotals(final Grid&ltT&gt grid) {
+</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Fold</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">private &ltT&gt Double calculateTotals(final Grid&ltT&gt grid) {
     return grid.getRows()
         .stream()
         .flatMap(e -> e.getColumns().stream())
@@ -139,5 +88,60 @@ data class Grid&ltT&gt(val rows: List<Row&ltT&gt>)
 data class Row&ltT&gt(val columns: List<Column&ltT&gt>)
 data class Column&ltT&gt(val title: String, val value: T)
 
-// https://kotlinexpertise.com/kotlin-productivity/</code></pre></div></div></div></div></div></div><footer><div class="container text-center"><div class="row justify-content-center pt-4"><div class="col"><span>Java 13</span></div></div><div class="row justify-content-center"><div class="col"><span>Kotlin 1.3.60</span></div></div><div class="row justify-content-center pt-4 pb-2"><div class="col"><span>Created by: <a href="https://www.driver733.com">@driver733</a></span></div></div><div class="row justify-content-center"><div class="col"><a href="https://github.com/driver733/kotlin-vs-java"><img src="//img.shields.io/github/stars/driver733/kotlin-vs-java.svg?style=social" alt="GitHub stars"></a></div></div><div class="row justify-content-center pt-4 pb-4"><div class="col"><span>Based on: </span><a href="https://github.com/fabiomsr/from-java-to-kotlin">fabiomsr/from-java-to-kotlin</a></div></div></div></footer></body>
+// https://kotlinexpertise.com/kotlin-productivity/</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">AssociateBy</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">final var map = currencies.stream()
+    .collect(
+        Collectors.toMap(
+            Currency::getCode,
+            Function.identity()
+        )
+    );</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val map = currencies.associateBy { it.code }</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Zip</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">final var numbers = List.of(1, 2, 3);
+final var names = List.of("Jack", "Michael", "Bob");
+IntStream
+    .range(0, Math.min(names.size(), ages.size()))
+    .mapToObj(i -> names.get(i) + ":" + ages.get(i))
+    .collect(Collectors.toList());</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val pairs = listOf(1, 2, 3).zip(listOf("one", "two", "three")) // List<Pair<Int, String>></code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Infix functions</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">var list = List.of("a", "b", "c")
+list.add("d")
+list.remove("d")</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val list = mutableListOf("a", "b", "c")
+list += "d"
+list -= "d"</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">CollectingAndThen</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">final var topPaidEmployee = Map.of(
+    "Alex", 250,
+    "Boss", 999,
+    "Chris", 400
+).entrySet()
+    .stream()
+    .filter(employee -> !employee.getValue().equals("Boss"))
+    .collect(
+        Collectors.collectingAndThen(
+            Collectors.maxBy(Comparator.comparing(Map.Entry::getValue)),
+            employee -> {
+                if (employee.isPresent() {
+                    return employee.getKey(); 
+                }
+                throw new IllegalStateException("No employees");
+            }
+        )
+    );</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val topPaidEmployee = listOf("Alex" to 250, "Boss" to 999, "Chris" to 400)
+    .filter { it.first != "Boss" }
+    .maxBy { it.second }
+    ?.run { first }
+    ?: throw IllegalStateException("No employees")</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">For</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">for (int i = 1; i < 11; i++) { }
+
+for (int i = 1; i < 11; i += 2) { }
+
+for (String item : collection) { }
+
+for (var entry: map.entrySet()) { }
+</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">for (i in 1 until 11) { }
+
+for (i in 1..10 step 2) {}
+
+for (item in collection) {}
+for ((index, item) in collection.withIndex()) {}
+
+for ((key, value) in map) {}
+</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Repeat</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">for (int i = 0; i < 4; i++) {
+    System.out.println("Hello")
+}</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">repeat(3) {
+    println("Hello")
+}</code></pre></div></div></div></div></div></div><footer><div class="container text-center"><div class="row justify-content-center pt-4"><div class="col"><span>Java 13</span></div></div><div class="row justify-content-center"><div class="col"><span>Kotlin 1.3.60</span></div></div><div class="row justify-content-center pt-4 pb-2"><div class="col"><span>Created by: <a href="https://www.driver733.com">@driver733</a></span></div></div><div class="row justify-content-center"><div class="col"><a href="https://github.com/driver733/kotlin-vs-java"><img src="//img.shields.io/github/stars/driver733/kotlin-vs-java.svg?style=social" alt="GitHub stars"></a></div></div><div class="row justify-content-center pt-4 pb-4"><div class="col"><span>Based on: </span><a href="https://github.com/fabiomsr/from-java-to-kotlin">fabiomsr/from-java-to-kotlin</a></div></div></div></footer></body>
 </html>
