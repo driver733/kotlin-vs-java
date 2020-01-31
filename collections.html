@@ -139,9 +139,30 @@ for (item in collection) {}
 for ((index, item) in collection.withIndex()) {}
 
 for ((key, value) in map) {}
-</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Repeat</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">for (int i = 0; i < 4; i++) {
+</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Repeat</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">for (int i = 0; i < 3; i++) {
     System.out.println("Hello")
 }</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">repeat(3) {
     println("Hello")
-}</code></pre></div></div></div></div></div></div><footer><div class="container text-center"><div class="row justify-content-center pt-4"><div class="col"><span>Java 13</span></div></div><div class="row justify-content-center"><div class="col"><span>Kotlin 1.3.60</span></div></div><div class="row justify-content-center pt-4 pb-2"><div class="col"><span>Created by: <a href="https://www.driver733.com">@driver733</a></span></div></div><div class="row justify-content-center"><div class="col"><a href="https://github.com/driver733/kotlin-vs-java"><img src="//img.shields.io/github/stars/driver733/kotlin-vs-java.svg?style=social" alt="GitHub stars"></a></div></div><div class="row justify-content-center pt-4 pb-4"><div class="col"><span>Based on: </span><a href="https://github.com/fabiomsr/from-java-to-kotlin">fabiomsr/from-java-to-kotlin</a></div></div></div></footer></body>
+}</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Comparators</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">var persons = List.of(
+    new Person("Bob C.", 5), new Person("Alex G.", 10), new Person("Alex G.", 12)
+);
+persons.sort(
+    Comparator
+        .comparing(Person::getScore, Comparator.reverseOrder())
+        .thenComparing((Person::getName), Comparator.naturalOrder())
+);
+// [(Alex G., 12), (Alex G., 10), (Bob C., 5)]
+
+@Data // Lombok
+class Person {
+    private final String name;
+    private final Integer score;
+}
+
+</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val personsSorted = listOf(
+    Pair("Bob C.", 5), Pair("Alex G.", 10), Pair("Alex G.", 12)
+).sortedWith(
+    compareByDescending<Pair<String, Int>> { it.second }
+        .thenBy { it. first }
+)</code></pre></div></div></div></div></div></div><footer><div class="container text-center"><div class="row justify-content-center pt-4"><div class="col"><span>Java 13</span></div></div><div class="row justify-content-center"><div class="col"><span>Kotlin 1.3.60</span></div></div><div class="row justify-content-center pt-4 pb-2"><div class="col"><span>Created by: <a href="https://www.driver733.com">@driver733</a></span></div></div><div class="row justify-content-center"><div class="col"><a href="https://github.com/driver733/kotlin-vs-java"><img src="//img.shields.io/github/stars/driver733/kotlin-vs-java.svg?style=social" alt="GitHub stars"></a></div></div><div class="row justify-content-center pt-4 pb-4"><div class="col"><span>Based on: </span><a href="https://github.com/fabiomsr/from-java-to-kotlin">fabiomsr/from-java-to-kotlin</a></div></div></div></footer></body>
 </html>
