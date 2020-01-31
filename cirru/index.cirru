@@ -90,3 +90,13 @@
           .col
             .lang Kotlin
             pre.code $ code (@insert ../../code/kotlin/basic/ternary-operator.kt) $ :class kotlin
+    div (:class "list-group-item border-0")
+      .title "Arrays"
+      .container-fluid
+        .row
+          .col
+            .lang Java
+            pre.code $ code (@insert ../../code/java/basic/arrays.java) $ :class java
+          .col
+            .lang Kotlin
+            pre.code $ code (@insert ../../code/kotlin/basic/arrays.kt) $ :class kotlin
