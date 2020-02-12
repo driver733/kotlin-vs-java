@@ -16,7 +16,7 @@ original.also {
     fragment.setArguments(args);
     return fragment;
 }
-</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">fun createInstance(args: Bundle) = MyFragment().apply { arguments = args }</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Let</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">fina var original = "abc"
+</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">fun createInstance(args: Bundle) = MyFragment().apply { arguments = args }</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Let</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">final var original = "abc"
 // Map the value and send to the next chain
 
 Optional.of(original)
@@ -37,7 +37,8 @@ Optional.of(original)
                 System.out.println("The length of the String is " + length); // 3
                 return length;
             }
-        )</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val original = "abc"
+        )
+</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val original = "abc"
 // Map the value and send to the next chain
 original.let {
     println("The original String is $it") // "abc"
