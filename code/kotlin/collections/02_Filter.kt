@@ -1,2 +1,1 @@
-numbers.filter   { it > 5 }
-       .forEach { println(it) }
+val filtered = numbers.filter { it > 5 }
