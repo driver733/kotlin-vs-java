@@ -100,3 +100,13 @@
           .col
             .lang Kotlin
             pre.code $ code (@insert ../../code/kotlin/basic/arrays.kt) $ :class kotlin
+    div (:class "list-group-item border-0")
+      .title "Use"
+      .container-fluid
+        .row
+          .col
+            .lang Java
+            pre.code $ code (@insert ../../code/java/basic/use.java) $ :class java
+          .col
+            .lang Kotlin
+            pre.code $ code (@insert ../../code/kotlin/basic/use.kt) $ :class kotlin
