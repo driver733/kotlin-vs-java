@@ -1,3 +1,7 @@
+html {
+    height: 100vh;
+}
+
 body {
     font-family: "Helvetica Neue", sans-serif;
 }
@@ -76,6 +80,7 @@ li a:hover {
 }
 
 footer {
+    height: 100vh;
     background-color: #414141;
     font-size: 1em;
     color: white;
