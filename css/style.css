@@ -4,6 +4,8 @@ html {
 
 body {
     font-family: "Helvetica Neue", sans-serif;
+    height: 100vh;
+    background-color: #414141;
 }
 
 .list-group {
