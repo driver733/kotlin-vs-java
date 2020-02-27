@@ -124,6 +124,15 @@ nav (:class "navbar navbar-dark navbar-expand-lg")
         li (:class "nav-item px-2")
           a (:class nav-link) (:href /spring-framework.html)
             = Spring Framework
+      @if (@ error_prone)
+        li (:class "nav-item px-2 active")
+          a (:class nav-link) (:href /error-prone.html)
+            = Error prone
+          span (:class sr-only)
+            = (current)
+        li (:class "nav-item px-2")
+          a (:class nav-link) (:href /error-prone.html)
+            = Error prone
 
 a
   :href
