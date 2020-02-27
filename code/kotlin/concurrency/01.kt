@@ -1,11 +1,6 @@
-suspend fun doSequentially() {
-    val something = doSomething()
-    doSomethingElse(something)
-}
-
-suspend fun doBoth() = coroutineScope {
-    val deferredOne = async { doSomething() }
-    val two = doSomethingElse() // while doSomething is working
-    val one = deferredOne.await()
-    // combine results of both calls here
-}
+suspend fun loadAndCombine(name1: String, name2: String): Image =
+        coroutineScope {
+            val deferred1 = async { loadImage(name1) }
+            val deferred2 = async { loadImage(name2) }
+            combineImages(deferred1.await(), deferred2.await())
+        }

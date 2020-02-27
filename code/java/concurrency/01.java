@@ -1,15 +1,7 @@
-public CompletableFuture&ltSomeOtherResult&gt doBothAsync(){
-    doSomethingAsync()
-        .thenAcceptBoth(doSomethingElseAsync()) (
+public CompletableFuture&ltSomeOtherResult&gt loadAndCombine(String name1, String name2){
+        loadImageAsync(name1)
+            .thenAcceptBoth(loadImageAsync(name2)) (
                 (one, two) -> {
-            // combine results of both calls here
+                // combine results of both calls here
         )}
-}
-
-
-public CompletableFuture&ltSomeOtherResult&gt doSequentiallyAsync() {
-    doSomethingAsync().thenCompose(
-        something -> {
-            doSomethingElseAsync(something)
-    })
 }
