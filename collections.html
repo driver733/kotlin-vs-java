@@ -109,18 +109,19 @@ list -= "d"</code></pre></div></div></div></div><div class="list-group-item bord
     "Chris", 400
 ).entrySet()
     .stream()
-    .filter(employee -> !employee.getValue().equals("Boss"))
+    .filter(employee -> !employee.getKey().equals("Boss"))
     .collect(
         Collectors.collectingAndThen(
             Collectors.maxBy(Comparator.comparing(Map.Entry::getValue)),
             employee -> {
-                if (employee.isPresent() {
-                    return employee.getKey(); 
+                if (employee.isPresent()) {
+                    return employee.get().getKey(); 
                 }
                 throw new IllegalStateException("No employees");
             }
         )
-    );</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val topPaidEmployee = listOf("Alex" to 250, "Boss" to 999, "Chris" to 400)
+    );
+</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val topPaidEmployee = listOf("Alex" to 250, "Boss" to 999, "Chris" to 400)
     .filter { it.first != "Boss" }
     .maxBy { it.second }
     ?.first
