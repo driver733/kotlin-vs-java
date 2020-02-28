@@ -123,7 +123,7 @@ list -= "d"</code></pre></div></div></div></div><div class="list-group-item bord
     );</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">val topPaidEmployee = listOf("Alex" to 250, "Boss" to 999, "Chris" to 400)
     .filter { it.first != "Boss" }
     .maxBy { it.second }
-    ?.run { first }
+    ?.first
     ?: throw IllegalStateException("No employees")</code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">For</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">for (int i = 1; i < 11; i++) { }
 
 for (int i = 1; i < 11; i += 2) { }
