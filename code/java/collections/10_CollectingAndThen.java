@@ -4,13 +4,13 @@ final var topPaidEmployee = Map.of(
     "Chris", 400
 ).entrySet()
     .stream()
-    .filter(employee -> !employee.getValue().equals("Boss"))
+    .filter(employee -> !employee.getKey().equals("Boss"))
     .collect(
         Collectors.collectingAndThen(
             Collectors.maxBy(Comparator.comparing(Map.Entry::getValue)),
             employee -> {
-                if (employee.isPresent() {
-                    return employee.getKey(); 
+                if (employee.isPresent()) {
+                    return employee.get().getKey(); 
                 }
                 throw new IllegalStateException("No employees");
             }
