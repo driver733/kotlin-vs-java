@@ -76,14 +76,8 @@ val bigNumbers = LongArray(size)
 
 val strings = Array(size) { String() }
 </code></pre></div></div></div></div><div class="list-group-item border-0"><div class="title">Use</div><div class="container-fluid"><div class="row"><div class="col"><div class="lang">Java</div><pre class="code"><code class="java">var file = new File("contents.txt");
-try {
-    var fileReader = new FileReader(file);
-    try (var bufferedReader = new BufferedReader(fileReader)) {
-        // the bufferedReader is closed automatically
-    }
-} catch (IOException ex) {
-    // handle the exception
-}</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">File("contents.txt")
+ Files.readAllBytes(Paths.get("content.txt"))
+</code></pre></div><div class="col"><div class="lang">Kotlin</div><pre class="code"><code class="kotlin">File("contents.txt")
     .bufferedReader()
     .use {
         // the bufferedReader is closed automatically
