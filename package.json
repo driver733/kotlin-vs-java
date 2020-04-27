@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "mission": "0.0.8-1",
-    "shelljs": "0.8.3",
+    "shelljs": "0.8.4",
     "list-files": "1.1.4",
     "combine-files": "1.1.8"
   },
